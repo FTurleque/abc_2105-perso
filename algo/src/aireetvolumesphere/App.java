@@ -1,4 +1,4 @@
-package aireEtVolumeSphere;
+package aireetvolumesphere;
 
 import java.lang.Math;
 import java.util.Scanner;

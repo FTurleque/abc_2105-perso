@@ -1,4 +1,4 @@
-package anneeBissextile;
+package anneebissextile;
 
 import java.util.Scanner;
 
