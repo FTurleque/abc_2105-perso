@@ -25,7 +25,7 @@ Exercice 1.3 : Calcul de la surface d’un secteur circulaire
 Exercice 1.4 : Inversion de 2 valeurs  
 Exercice 1.5 : Calcul d’intérêts  
 Exercice 1.6 : Nombre Premier  
-Exercice 1.7 : Tri de nombres // A Faire  
+Exercice 1.7 : Tri de nombres    
 Exercice 1.8 : Année Bissextile  
 Exercice 2.1 : Conversion Kilomètres <-> Miles  
 Exercice 2.2 : Conversion Degrés Fahrenheit (°F) <--> Degrés Celsius (°C) // A finir  
