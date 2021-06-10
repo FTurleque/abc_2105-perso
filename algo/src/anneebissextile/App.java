@@ -12,10 +12,10 @@ public class App {
         System.out.println("Année Bissextile");
         scanner = new Scanner(System.in);
 
-
         System.out.println("Choisir une année :");
         annee = scanner.nextInt();
         
+        // I see if the year is divisible by 4 and not by 100 or not by 400
         if (annee % 4 == 0 && annee % 100 != 0 || annee % 400 == 0) {
             System.out.println("L'année " + annee + " est Bissextile");
         } else {

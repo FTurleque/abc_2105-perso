@@ -20,9 +20,6 @@ public class App {
             System.out.println("Choisir une valeur comprise entre 0.01 et 1 000 000 :");
             valeur = scanner.nextDouble();
 
-            // scanner.close();
-            // scanner = new Scanner(System.in);
-
 
             if (valeur > 0.01 && valeur <= 100000) {
                 System.out.println("Choisir l'unitée à convertir, tapez km pour Kilomètre et mi pour Miles :");

@@ -19,18 +19,18 @@ public class App {
         System.out.println("Choisir une valeur entiere pour B : ");
         b = scanner.nextInt();
 
-        System.out.println("La valeur de A est : " + a);
-        System.out.println("La valeur de B est : " + b);
+        System.out.println("La valeur de (a) est : " + a);
+        System.out.println("La valeur de (B) est : " + b);
 
         System.out.println("Nous inversons les valeur de A et B !");
 
 
-        c = a;
-        a = b;
-        b = c;
+        a = c;
+        b = a;
+        c = b;
 
-        System.out.println("La valeur de A devient: " + a);
-        System.out.println("La valeur de B devient: " + b);
+        System.out.println("La valeur de (a) devient: " + a);
+        System.out.println("La valeur de (B) devient: " + b);
 
 
 

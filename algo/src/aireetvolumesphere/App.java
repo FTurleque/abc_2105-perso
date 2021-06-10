@@ -14,14 +14,15 @@ public class App {
         Scanner scanner;
 
         System.out.println("Calcul de l’aire et du volume d’une sphère !");
-
+        // Intialization of Scanner variable
         scanner = new Scanner(System.in);
 
-
+        // I print on a screen a sentece
         System.out.println("Choisir le rayon de la sphère : ");
-
+        // I ask the user to enter a value
         rayon = scanner.nextInt();
         
+        // I break down the formulas
         aire = Math.PI*Math.pow(rayon, 2);
         volume = Math.PI*Math.pow(rayon, 3);
 
