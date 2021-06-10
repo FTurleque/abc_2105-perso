@@ -25,14 +25,16 @@ public class App {
             tempEtUnite = scanner.nextLine();
 
             // I separate tempEtUnite with space 
-            // Pattern nombre = Pattern.compile("\\W");
             Pattern nombre = Pattern.compile("[ \t]");
+
             // I separate tempEtUnite in a bord with 2 case with number and string
             String[] items = nombre.split(tempEtUnite);
+
             /*
             for (int i = 0; i < items.length; i++) {
                 System.out.println(items[i]);
-            }*/
+            }
+            */
 
             temperature = items[0];
             
@@ -43,7 +45,7 @@ public class App {
             } catch (Exception e) {
                 // TODO: handle exception
                 //e.printStackTrace();
-                if (!temperature.equals("q")) {
+                if (!temperature.equalsIgnoreCase("q")) {
                     System.out.println("Commande inconnue");
                 } 
             }
@@ -63,7 +65,7 @@ public class App {
                 
             }
             
-        } while (!temperature.equals("q"));
+        } while (!temperature.equalsIgnoreCase("q"));
 
         scanner.close();
         
