@@ -7,7 +7,7 @@ public class App {
         
         int a;
         int b;
-        int c;
+        int c = 0;
         Scanner scanner;
 
         System.out.println("Inversion de deux valeurs !");

@@ -6,68 +6,67 @@ import java.util.regex.*;
 public class App {
 
     public static void main(String[] args) {
-        double temperature;
-        // String unite;
-        String unite;
+        String temperature,
+               unite,
+               tempEtUnite,
+               commandeUtilisateur;
+        double number = 0;
         Scanner scanner;
-        String tempEtUnite;
 
         System.out.println("Conversion Degrés Fahrenheit <=> Degrés Celsius");
         scanner = new Scanner(System.in);
         tempEtUnite = new String();
-
+        temperature = new String();
+        unite = new String();
 
         do {
             System.out.println("Saisir une température suivie de l'unitée de mesure à convertir séparé par un espace !");
             System.out.println("C pour Celsius ou F pour Fahrenheit :");
             tempEtUnite = scanner.nextLine();
 
+            // I separate tempEtUnite with space 
+            // Pattern nombre = Pattern.compile("\\W");
+            Pattern nombre = Pattern.compile("[ \t]");
+            // I separate tempEtUnite in a bord with 2 case with number and string
+            String[] items = nombre.split(tempEtUnite);
 
-            // conversion char en string avec string.valueOf()
-            // séparation de l'unité de mesure et du nombre a convertir grace à son emplacement dans une chaine de charactère
-            unite = String.valueOf(tempEtUnite.charAt(tempEtUnite.length()-1));
-            // temperature = Double.parseDouble(tempEtUnite.charAt(tempEtUnite.length()-3));
+            for (int i = 0; i < items.length; i++) {
+                System.out.println(items[i]);
+            }
 
+            temperature = items[0];
+            
+            try {
+                number = Integer.parseInt(temperature);
+                unite = items[1];
+
+            } catch (Exception e) {
+                // TODO: handle exception
+                //e.printStackTrace();
+                if (!temperature.equals("q")) {
+                    System.out.println("Commande inconnue");
+                } 
+            }
 
             // Vérification de l'unité de mesure MAJ ou Minuscule avec leur température limite accepté
-            if (((unite.equals("F") && temperature >= -459.67) || (unite.equals("C") && temperature >= -273.15)) && temperature <= 5000000) {
+            if (((unite.equalsIgnoreCase("f") && number >= -459.67) || (unite.equalsIgnoreCase("c") && number >= -273.15)) && number <= 5000000) {
                 
-                if (unite.equals("C")) {
-                    System.out.println(temperature + " °C = " + (temperature * 9 / 5) + 32 + " °F");
-                    
+                if (unite.equalsIgnoreCase("c")) {
+                    System.out.println(number + " °C = " + (number * 9 / 5) + 32 + " °F");
+
                 } else {
-                    System.out.println(temperature + " °F = " + (temperature - 32) * 5 / 9 + " °C");
+                    System.out.println(number + " °F = " + (number - 32) * 5 / 9 + " °C");
                     
                 }
-
-                
             } else {
-                System.out.println("Vous avez saisie une valeur hors limite ! Recommancez.");
+                System.out.println("Vous avez saisie une valeur hors limite ou une lettre autre que q ! Recommancez.");
                 
             }
             
-            
-        } while (!unite.equals("q"));
+        } while (!temperature.equals("q"));
 
         scanner.close();
         
     }
     
 }
-
-/*
-String unity_C = "C", 
-               unityc = "c", 
-               unity_F = "F", 
-               unityf = "f",
-               unite;
-            if (((unity_C.equalsIgnoreCase(unityc) && temperature >= -459.67) || (unity_F.equalsIgnoreCase(unityf) && temperature >= -273.15)) && temperature <= 5000000) {
-                
-                if (unity_C.equalsIgnoreCase(unityc)) {
-                    System.out.println(temperature + " °C = " + (temperature * 9 / 5) + 32 + " °F");
-                    
-                } else {
-                    System.out.println(temperature + " °F = " + (temperature - 32) * 5 / 9 + " °C");
-                    
-                }
-                */
