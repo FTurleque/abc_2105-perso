@@ -16,7 +16,7 @@ public class App {
         System.out.println("Conversion Degrés Fahrenheit <=> Degrés Celsius");
         scanner = new Scanner(System.in);
         tempEtUnite = new String();
-        temperature = new String();
+        /*temperature = new String();*/
         unite = new String();
 
         do {
@@ -31,6 +31,7 @@ public class App {
             String[] items = nombre.split(tempEtUnite);
 
             /*
+            // Test to watch if i 
             for (int i = 0; i < items.length; i++) {
                 System.out.println(items[i]);
             }
@@ -55,14 +56,11 @@ public class App {
                 
                 if (unite.equalsIgnoreCase("c")) {
                     System.out.println(number + " °C = " + (number * 9 / 5) + 32 + " °F");
-
                 } else {
                     System.out.println(number + " °F = " + (number - 32) * 5 / 9 + " °C");
-                    
                 }
             } else {
-                System.out.println("Vous avez saisie une valeur hors limite ou une lettre autre que q ! Recommancez.");
-                
+                System.out.println("Vous avez saisie une valeur hors limite ou une lettre autre que q ! Recommencez.");
             }
             
         } while (!temperature.equalsIgnoreCase("q"));

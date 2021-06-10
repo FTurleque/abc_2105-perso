@@ -39,8 +39,7 @@ public class App {
 
             b = Integer.parseInt(a);
 
-            scanner.close();
-        }
+        } while (b < 1);
     }
     }
     
