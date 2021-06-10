@@ -29,10 +29,10 @@ public class App {
             Pattern nombre = Pattern.compile("[ \t]");
             // I separate tempEtUnite in a bord with 2 case with number and string
             String[] items = nombre.split(tempEtUnite);
-
+            /*
             for (int i = 0; i < items.length; i++) {
                 System.out.println(items[i]);
-            }
+            }*/
 
             temperature = items[0];
             
