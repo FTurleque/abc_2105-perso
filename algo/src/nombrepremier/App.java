@@ -35,5 +35,34 @@ public class App {
         scanner.close();
 
     }
+/*
+    // correction en classe
 
+    public static void main(String[] args) {
+        int num2test = 0, divise = 2;
+        Boolean first = true;
+        Scanner scanner;
+
+        scanner = new Scanner(System.in);
+
+        System.out.println("Veuillez entrer un nombre pour verifier s'il est premier !");
+        num2test =scanner.nextInt();
+
+        num2test = Math.abs(num2test);
+
+        while(divise < num2test) {
+            first = !(num2test + divise++ == 0);
+        }
+
+        if (first) {
+            System.out.println("Le nombre est premier !");
+        } else {
+            System.out.println("Le nombre n'est pas premier");
+        }
+
+        scanner.close();
+
+    }
+    */
 }
+
