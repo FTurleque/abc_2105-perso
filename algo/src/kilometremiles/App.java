@@ -11,7 +11,7 @@ public class App {
         String sortie;
         Scanner scanner;
 
-        System.out.println("Coversion kilomètre en Miles et inversement !");
+        System.out.println("Conversion kilomètre en Miles et inversement !");
         scanner = new Scanner(System.in);
         sortie = new String();
         

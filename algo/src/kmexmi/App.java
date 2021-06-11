@@ -1,4 +1,4 @@
-package kmex;
+package kmexmi;
 
 import java.util.Scanner;
 
@@ -11,6 +11,8 @@ public class App {
 
     saisie = "14 km";
 
+    // toLowerCase(A) used to convert a letter "a"
+    // toUpperCase(a) used to convert a letter "A"
     if (saisie.toLowerCase().equals("quitter")) {
         System.exit(0); // quitter le programme
     }
@@ -40,7 +42,7 @@ public class App {
             b = Integer.parseInt(a);
 
         } while (b < 1);
-    }
+    
     }
     
 }
