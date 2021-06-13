@@ -25,7 +25,7 @@ public class App {
     valeur = Integer.parseInt(tableau[0]); // conversion de la chaine "14" en nombre entier 14
 
     valeur = valeur + 2;
-
+    /*
     do {
         String a;
         int b = 0;
@@ -42,7 +42,7 @@ public class App {
             b = Integer.parseInt(a);
 
         } while (b < 1);
-    
+    */
     }
     
 }

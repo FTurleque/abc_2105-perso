@@ -8,8 +8,7 @@ public class App {
     public static void main(String[] args) {
         String temperature,
                unite,
-               tempEtUnite,
-               commandeUtilisateur;
+               tempEtUnite;
         double number = 0;
         Scanner scanner;
 
