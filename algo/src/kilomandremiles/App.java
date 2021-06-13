@@ -1,4 +1,4 @@
-package kilometremiles;
+package kilomandremiles;
 
 import java.util.Scanner;
 
@@ -24,7 +24,8 @@ public class App {
                 System.out.println("Choisir l'unitée à convertir, tapez km pour Kilomètre et mi pour Miles :");
                 choix = scanner.next();
 
-                if (choix.equalsIgnoreCase("km")) {  // pour choix == "km" je passe dans le else quand mon choix est "km" bizard !
+                if (choix.equalsIgnoreCase("km")) 
+                {  
                     System.out.println(valeur + " Kilomètre = " + valeur/1.609 + " Miles !");
 
                 } else {
@@ -33,8 +34,8 @@ public class App {
                 }
 
                 System.out.println("Appuyez sur q pour sortir du programme ou une autre touche pour recommencer !");
-                sortie = scanner.next(); // quand je renseigne "q" je devrais sortir de ma boucle mais là non je recommence bizard !
-
+                sortie = scanner.next(); 
+                
             }  else {
                 System.out.println("Vous n'avez pas indiqué une valeur entre 0.001 et 1 000 000 !");
 

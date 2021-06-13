@@ -28,8 +28,9 @@ public class App {
             System.out.println(boardValious[0]);
             System.out.println(boardValious[1]);
             */
-            // I convert the first box of the table in a integer 
+            
             if (!boardValious[0].equalsIgnoreCase("quit")) {
+                // I convert the first box of the table in a integer 
                 valious = Integer.parseInt(boardValious[0]);
             
                 if (boardValious.length < 2) {
