@@ -8,6 +8,20 @@
             "type": "java",
             "name": "Launch App",
             "request": "launch",
+            "mainClass": "kmandmilestwo.App",
+            "projectName": "abc_2105-perso_bfba3455"
+        },
+        {
+            "type": "java",
+            "name": "Launch App",
+            "request": "launch",
+            "mainClass": "kmandmilestoo.App",
+            "projectName": "abc_2105-perso_bfba3455"
+        },
+        {
+            "type": "java",
+            "name": "Launch App",
+            "request": "launch",
             "mainClass": "celsiusfahrenheit.App",
             "projectName": "abc_2105-perso_76549031"
         },

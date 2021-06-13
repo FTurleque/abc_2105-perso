@@ -14,18 +14,17 @@ public class App {
         System.out.println("Conversion kilomètre en Miles et inversement !");
         scanner = new Scanner(System.in);
         sortie = new String();
+
         
         do {
-            
             System.out.println("Choisir une valeur comprise entre 0.01 et 1 000 000 :");
             valeur = scanner.nextDouble();
-
-
+            
             if (valeur > 0.01 && valeur <= 100000) {
                 System.out.println("Choisir l'unitée à convertir, tapez km pour Kilomètre et mi pour Miles :");
                 choix = scanner.next();
 
-                if (choix.equals("km")) {  // pour choix == "km" je passe dans le else quand mon choix est "km" bizard !
+                if (choix.equalsIgnoreCase("km")) {  // pour choix == "km" je passe dans le else quand mon choix est "km" bizard !
                     System.out.println(valeur + " Kilomètre = " + valeur/1.609 + " Miles !");
 
                 } else {
@@ -43,7 +42,7 @@ public class App {
             }
 
 
-        } while (!sortie.equals("q"));
+        } while (!sortie.equalsIgnoreCase("q"));
 
         scanner.close();
     }
