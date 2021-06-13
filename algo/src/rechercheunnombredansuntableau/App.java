@@ -11,20 +11,29 @@ public class App {
 
         System.out.println("Rechercher un nombre dans un tableau !");
         scanner = new Scanner(System.in);
+
+        // array initialization
         myArray = new int[]{2,5,8,13,18};
 
         do {
             System.out.println("Choisir un nombre entre 1 et 20 :");
             mystery = scanner.nextInt();
 
-            if (mystery == myArray[]) {
+            // check for each cell of the table if the number is there
+            for (int i = 0; i < myArray.length; i++) {
+                if (myArray[i] == mystery) {
+                    find = true;
+                }
+            }
+
+            if (find.equals(true)) {
                 System.out.println("Vous avez Gagnez ! Le nombre choisi se trouve bien dans le tableau !");
-                find = true;
             } else {
                 System.out.println("Perdu, rejouez !");
             }
 
-        } while (find == true);
+
+        } while (find == false);
 
         scanner.close();
     }
