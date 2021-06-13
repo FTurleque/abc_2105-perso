@@ -29,3 +29,4 @@ Exercice 1.7 : Tri de nombres
 Exercice 1.8 : Année Bissextile  
 Exercice 2.1 : Conversion Kilomètres <-> Miles // finir version 3  
 Exercice 2.2 : Conversion Degrés Fahrenheit (°F) <--> Degrés Celsius (°C)  
+Exercice 3.1 : Rechercher un nombre dans un tableau  
