@@ -1,6 +1,5 @@
 package kmexmi;
 
-
 public class App {
     public static void main(String[] args) {
     String saisie; // saisie utilisateur
