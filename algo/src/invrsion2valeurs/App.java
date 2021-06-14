@@ -25,9 +25,9 @@ public class App {
         System.out.println("Nous inversons les valeur de A et B !");
 
 
-        a = c;
-        b = a;
-        c = b;
+        c = a;
+        a = b;
+        b = c;
 
         System.out.println("La valeur de (a) devient: " + a);
         System.out.println("La valeur de (B) devient: " + b);

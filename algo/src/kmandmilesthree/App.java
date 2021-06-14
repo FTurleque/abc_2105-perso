@@ -24,7 +24,7 @@ public class App {
             System.out.println("km pour kilomètre et mi pour miles.");
             System.out.println("Tapez go pour lancer les calculs.");
 
-            while (!userEnter.equals("go")) {
+            do {
                 
                 userEnter = scanner.nextLine();
 
@@ -42,7 +42,7 @@ public class App {
                     }
                 }
 
-            }
+            } while (!userEnter.equals("go"));
             
             System.out.println(boardValious[0]);
             System.out.println(boardValious[1]);
