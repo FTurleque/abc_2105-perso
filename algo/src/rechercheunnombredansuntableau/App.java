@@ -7,7 +7,7 @@ public class App {
         int mystery;
         int[] myArray;
         Scanner scanner;
-        Boolean find = false;
+        boolean find = false;
 
         System.out.println("Rechercher un nombre dans un tableau !");
         scanner = new Scanner(System.in);
@@ -26,7 +26,7 @@ public class App {
                 }
             }
 
-            if (find.equals(true)) {
+            if (find) {
                 System.out.println("Vous avez Gagnez ! Le nombre choisi se trouve bien dans le tableau !");
             } else {
                 System.out.println("Perdu, rejouez !");
