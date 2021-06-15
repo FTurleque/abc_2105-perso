@@ -4,26 +4,21 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) {
-        
-        int a;
-        int b;
-        int c = 0;
-        Scanner scanner;
+        int    a,
+               b,
+               c;
+        //Scanner scanner;
 
         System.out.println("Inversion de deux valeurs !");
-        scanner = new Scanner(System.in);
+        //scanner = new Scanner(System.in);
+        a = 0;
+        b = 0;
+        c = 0;
 
-        System.out.println("Choisir une valeur entiere pour A : ");
-        a = scanner.nextInt();
-
-        System.out.println("Choisir une valeur entiere pour B : ");
-        b = scanner.nextInt();
-
-        System.out.println("La valeur de (a) est : " + a);
-        System.out.println("La valeur de (B) est : " + b);
-
-        System.out.println("Nous inversons les valeur de A et B !");
-
+        System.out.println("Choisir une valeur entiere pour a : ");
+        a = choice(a);
+        System.out.println("Choisir une valeur entiere pour b : ");
+        b = choice(b);
 
         c = a;
         a = b;
@@ -32,8 +27,30 @@ public class App {
         System.out.println("La valeur de (a) devient: " + a);
         System.out.println("La valeur de (B) devient: " + b);
 
+        //scanner.close();
+    }
 
+    static Integer choice(int a) {
+        String a1;
+        Scanner scanner;
 
-        scanner.close();
+        scanner = new Scanner(System.in);
+
+        do {
+            a1 = scanner.nextLine();
+
+            try {
+                a = Integer.parseInt(a1);
+                return a;
+            } catch (Exception e) {
+                //TODO: handle exception
+                System.out.println("Vous n'avez pas choisie un nombre, recommencez");
+                scanner.reset();
+                scanner.close();
+            }
+
+            scanner.close();
+
+        } while (true);
     }
 }
