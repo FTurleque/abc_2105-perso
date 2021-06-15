@@ -6,7 +6,7 @@ public class App {
     
     public static void main(String[] args) {
         
-        String annee;
+        String userEnter;
         int year = 0;
         Boolean find = false;
         Scanner scanner;
@@ -16,10 +16,10 @@ public class App {
 
         do {
             System.out.println("Choisir une année :");
-            annee = scanner.nextLine();
+            userEnter = scanner.nextLine();
 
             try {
-                year = Integer.parseInt(annee);
+                year = Integer.parseInt(userEnter);
                 find = true;
             } catch (Exception e) {
                 //TODO: handle exception
@@ -29,9 +29,9 @@ public class App {
         
         // I see if the year is divisible by 4 and not by 100 or not by 400
         if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
-            System.out.println("L'année " + annee + " est Bissextile");
+            System.out.println("L'année " + userEnter + " est Bissextile");
         } else {
-            System.out.println("L'année " + annee + " n'est pas Bissextile");
+            System.out.println("L'année " + userEnter + " n'est pas Bissextile");
         }
 
         scanner.close();

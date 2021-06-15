@@ -15,7 +15,6 @@ public class App {
         Scanner scanner;
 
         System.out.println("Calcul d’intérêts");
-
         scanner = new Scanner(System.in);
 
         System.out.println("Quel est la somme placée sur le compte ?");
