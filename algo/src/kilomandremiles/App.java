@@ -4,40 +4,23 @@ import java.util.Scanner;
 
 public class App {
     static Scanner scanner = new Scanner(System.in);
+    static Double userNumber = (double)0;
+    static String unity = new String();
+    static String exit = new String();
 
     public static void main(String[] args) {
-
-        double userNumber = 0;
-        String unity,
-               exit,
-               userEnter;
+        String userEnter;
 
         System.out.println("Conversion kilomètre en Miles et inversement !");
-        exit = new String();
         userEnter = new String();
-
         
         do {
-            //System.out.println("Choisir une valeur comprise entre 0.01 et 1 000 000 :");
-            //userNumber = scanner.nextDouble();
             userNumber = userEnterNumber(userEnter);
             
             if (userNumber > 0.01 && userNumber <= 100000) {
-                System.out.println("Choisir l'unitée à convertir, tapez km pour Kilomètre et mi pour Miles :");
-                unity = scanner.next();
+                System.out.println(userEnterUnity());
 
-                if (unity.equalsIgnoreCase("km")) 
-                {  
-                    System.out.println(userNumber + " Kilomètre = " + userNumber/1.609 + " Miles !");
-
-                } else {
-                    System.out.println(userNumber + " Miles = " + userNumber*1.609 + " Kilomètre !");
-
-                }
-
-                System.out.println("Appuyez sur q pour sortir du programme ou une autre touche pour recommencer !");
-                exit = scanner.next(); 
-                
+                exitOrNot("Appuyez sur q pour sortir du programme ou une autre touche pour recommencer !");
             }  else {
                 System.out.println("Vous n'avez pas indiqué une valeur entre 0.001 et 1 000 000 !");
             }
@@ -59,9 +42,35 @@ public class App {
         } while (true);
     }
 
-    static String userEnterUnity(String unity) {
-        System.out.println("Choisir l'unitée à convertir, tapez km pour Kilomètre et mi pour Miles :");
-        unity = scanner.next();
+    static String userEnterUnity() {
 
+        do {
+            System.out.println("Choisir l'unitée à convertir, tapez km pour Kilomètre et mi pour Miles :");
+            unity = scanner.nextLine();
+    
+            try {
+                if (unity.equalsIgnoreCase("km") || unity.equalsIgnoreCase("mi") || unity.isEmpty()) {
+                    if (unity.equalsIgnoreCase("km") || unity.isEmpty()) {  
+                        return userNumber + " Kilomètre = " + userNumber/1.609 + " Miles !";
+                    } else {
+                        return userNumber + " Miles = " + userNumber*1.609 + " Kilomètre !";
+                    }
+                } else {
+                    // génére une nouvelle exception
+                    throw new Exception("Ceci est une erreur");
+                }
+            } catch (Exception e) {
+                //TODO: handle exception
+                System.err.println("Vous n'avez pas écrit km ou mi, recommencez !");
+            }
+        } while (true);
+    }
+
+    static void exitOrNot(String message) {
+        System.out.println(message);
+        exit = scanner.next();
+        if (exit.equalsIgnoreCase("q") || exit.isEmpty()) {
+            System.exit(0);
+        }
     }
 }

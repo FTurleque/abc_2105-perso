@@ -3,12 +3,11 @@ package nombrepremier;
 import java.util.Scanner;
 
 public class App {
+    static Scanner scanner = new Scanner(System.in);
     
     public static void main(String[] args) {
-        
         int n;
         int diviseur;
-        Scanner scanner;
 
         System.out.println("Déterminer s’il est un nombre premier !");
         scanner = new Scanner(System.in);
@@ -30,10 +29,6 @@ public class App {
         } else {
             System.out.println("Vous n'avez pas choisi un nombre premier !");
         }
-
-
-        scanner.close();
-
     }
 /*
     // correction en classe
