@@ -10,10 +10,8 @@ public class App {
     public static void main(String[] args) {
         System.out.println("Inversion de deux valeurs !");
 
-        System.out.println("Choisir une valeur entiere pour a : ");
-        a = askNumber();
-        System.out.println("Choisir une valeur entiere pour b : ");
-        b = askNumber();
+        a = askNumber("Choisir une valeur entiere pour a :");
+        b = askNumber("Choisir une valeur entiere pour b :");
 
         inversionAB();
 
@@ -21,16 +19,15 @@ public class App {
         System.out.println("La valeur de (b) devient: " + b);
     }
 
-    static int askNumber() {
+    static int askNumber(String message) {
         String userEnter;
-        int userNumber;
 
         do {
+            System.out.println(message);
             userEnter = scanner.nextLine();
 
             try {
-                userNumber = Integer.parseInt(userEnter);
-                return userNumber;
+                return Integer.parseInt(userEnter);
             } catch (Exception e) {
                 //TODO: handle exception
                 System.err.println("Vous n'avez pas choisie un nombre entier, recommencez");

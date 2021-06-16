@@ -3,31 +3,33 @@ package moyenne;
 import java.util.Scanner; // importer le composant Scanner
 
 public class App {
+    static Scanner scanner = new Scanner(System.in);
 
     // code du composant
-    
     public static void main(String[] args) {
-        
-        int a;
-        int b;
-        Scanner scanner;
-
-
+        int firstNumber = 0,
+            secondNumber = 0;
         System.out.println("Calcul de la moyenne de deux nombre entier.");
 
-        // Algo
+        firstNumber = askNumber("Choisissez un premier nombre entier :");
+        secondNumber = askNumber("Choisissez un second nombre entier :");
+        
+        System.out.println("Le résultat est: " + ((float)firstNumber + (float)secondNumber) / 2f);
+    }
 
-        scanner = new Scanner(System.in);
+    static int askNumber(String question) {
+        String userEnter;
 
-        System.out.println("Choisissez un premier nombre entier :");
-        a = scanner.nextInt();
+        do {
+            System.out.println(question);
+            userEnter = scanner.nextLine();
 
-        System.out.println("Choisissez un second nombre entier :");
-        b = scanner.nextInt();
-
-        System.out.println("Le résultat est: " + ((float)a + (float)b) / 2f);
-
-        scanner.close(); // obligatoire (pour libérer les ressource)
-
+            try {
+                return Integer.parseInt(userEnter);
+            } catch (Exception e) {
+                //TODO: handle exception
+                System.err.println("Vous n'avez pas ecrit un nombre entier recommencez !");
+            }
+        } while (true);
     }
 }
