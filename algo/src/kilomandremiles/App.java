@@ -20,11 +20,11 @@ public class App {
             if (userNumber > 0.01 && userNumber <= 100000) {
                 System.out.println(userEnterUnity());
 
-                exit = exitOrNot("Appuyez sur q pour sortir du programme ou une autre touche pour recommencer !");
+                exitOrNot("Appuyez sur q pour sortir du programme ou une autre touche pour recommencer !");
             }  else {
                 System.out.println("Vous n'avez pas indiqué une valeur entre 0.001 et 1 000 000 !");
             }
-        } while (!exit.equalsIgnoreCase("q"));
+        } while (true);
     }
 
     static double userEnterNumber(String userEnter) {
@@ -66,12 +66,12 @@ public class App {
         } while (true);
     }
 
-    static String exitOrNot(String message) {
+    static void exitOrNot(String message) {
         System.out.println(message);
-        exit = scanner.next();
+        exit = scanner.nextLine();
         if (exit.equalsIgnoreCase("q") || exit.isEmpty()) {
             System.exit(0);
         }
-        return exit;
+        //return exit;
     }
 }
