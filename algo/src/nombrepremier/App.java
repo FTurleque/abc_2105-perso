@@ -4,31 +4,43 @@ import java.util.Scanner;
 
 public class App {
     static Scanner scanner = new Scanner(System.in);
+    static String userEnter = new String();
     
     public static void main(String[] args) {
-        int n;
-        int diviseur;
+        int userNumber;
+        int diviseur = 2;
 
         System.out.println("Déterminer s’il est un nombre premier !");
-        scanner = new Scanner(System.in);
 
-        System.out.println("choisir un nombre entier naturel : ");
-        n = scanner.nextInt();
+        userNumber = getUserEnter("choisir un nombre entier naturel : ");
 
-        diviseur = 2;
-        n = Math.abs(n); // Pour la valeur absolue d'un nombre.
+        userNumber = Math.abs(userNumber); // Pour la valeur absolue d'un nombre.
 
         // Pour determiner si un est premier on cherche les diviseur de n, de 2 à racine carrée de n.
-        while (n % diviseur != 0 && diviseur <= Math.sqrt(n)) {
-            diviseur = diviseur + 1;
+        while (userNumber % diviseur != 0 && diviseur <= Math.sqrt(userNumber)) {
+            diviseur++;
         }
 
         // Un nombre premier admet 2 diviseur 1 et lui même.
-        if (diviseur > Math.sqrt(n)) {
+        if (diviseur > Math.sqrt(userNumber)) {
             System.out.println("Vous avez choisi un nombre premier !");
         } else {
             System.out.println("Vous n'avez pas choisi un nombre premier !");
         }
+    }
+
+    static int getUserEnter(String message) {
+        do {
+            System.out.println(message);
+            userEnter = scanner.nextLine();
+
+            try {
+                return Integer.parseInt(userEnter);
+            } catch (Exception e) {
+                //TODO: handle exception
+                System.out.println("Vous n'avez pas entré un nombre entier ! Recommencez !");
+            }
+        } while (true);
     }
 /*
     // correction en classe

@@ -31,7 +31,7 @@ public class App {
     }
 
     static int userEnter(String userNumber) {
-        int rayCircle = 0;
+        //int rayCircle = 0;
 
         do {
             // I print on a screen a sentece
@@ -40,8 +40,8 @@ public class App {
             userNumber = scanner.nextLine();
 
             try {
-                rayCircle = Integer.parseInt(userNumber);
-                return rayCircle;
+                return Integer.parseInt(userNumber);
+                //return rayCircle;
             } catch (Exception e) {
                 //TODO: handle exception
                 System.err.println("Vous n'avez pas ecrit un nombre recommencez !");
