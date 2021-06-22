@@ -3,16 +3,16 @@ package kmandmilestwo;
 import java.util.Scanner;
 
 public class App {
+    static Scanner scanner = new Scanner(System.in);
+
     public static void main(String[] args) {
 
         String   userEnter,
                  unity;
         String[] boardValious;
-        Scanner  scanner;
         int valious;
 
         System.out.println("Conversion Kilomètre en Miles et inversement !");
-        scanner = new Scanner(System.in);
         unity = new String();
 
 
@@ -51,9 +51,5 @@ public class App {
             }
             
         } while (!boardValious[0].equalsIgnoreCase("quit"));
-
-        scanner.close();
-        
     }
-    
 }

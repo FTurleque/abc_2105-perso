@@ -3,20 +3,20 @@ package kmandmilesthree;
 import java.util.Scanner;
 
 public class App {
+    static Scanner scanner = new Scanner(System.in);
+
     public static void main(String[] args) {
 
         String   userEnter,
                  go,
                  unity;
-        String[][] boardValious;
-        Scanner scanner;
+        String[] boardValious;
         int valious = 0;
 
         System.out.println("Conversion Kilomètre en Miles et inversement !");
-        scanner = new Scanner(System.in);
         unity = new String();
         userEnter = new String();
-        boardValious = new String[6][2];
+        boardValious = new String[12];
 
 
         do {
@@ -28,12 +28,13 @@ public class App {
                 
                 userEnter = scanner.nextLine();
 
+                // I split userEnter in a board with two valious in the format string
+                boardValious = userEnter.split(" ");
+
                 if (!userEnter.equalsIgnoreCase("go")) {
-                    // I split userEnter in a board with two valious in the format string
-                    boardValious = userEnter.split(" ");
 
                     // I convert the first box of the table in a integer 
-                    valious = Integer.parseInt(boardValious[0]);
+                    valious = Integer.parseInt(userEnter);
             
                     if (boardValious.length < 2) {
                     unity = "km";
@@ -64,11 +65,7 @@ public class App {
                     System.out.println("Vous n'avez pas saisie une valeur ou quit pour quitter !");
                 }
             }
-            
-        } while (!boardValious[0].equalsIgnoreCase("quit"));
 
-        scanner.close();
-        
+        } while (!boardValious[0].equalsIgnoreCase("quit"));
     }
-    
 }
