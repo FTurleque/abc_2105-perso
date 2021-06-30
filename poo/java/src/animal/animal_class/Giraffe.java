@@ -1,4 +1,4 @@
-package animal.animal_class_diagram;
+package animal.animal_class;
 
 
 /**

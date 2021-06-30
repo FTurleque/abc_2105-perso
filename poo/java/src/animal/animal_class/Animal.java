@@ -1,4 +1,4 @@
-package animal.animal_class_diagram;
+package animal.animal_class;
 
 /**
  * @author MDevoldere
@@ -22,19 +22,19 @@ public abstract class Animal
 
 	}
 
-	public void finalize() throws Throwable 
-	{
+	// public void finalize() throws Throwable 
+	// {
 
-	}
+	// }
 
 	/**
 	 * 
 	 * @param _specie
 	 */
-	public Animal Animal(String _specie)
-	{
-		return null;
-	}
+	// public Animal Animal(String _specie)
+	// {
+	// 	return null;
+	// }
 
 	/**
 	 * bee : foraging
@@ -51,16 +51,21 @@ public abstract class Animal
 
 	public void move()
 	{
+		System.out.println("Il se déplace.");
+	}
 
+	public void scream()
+	{
+		System.out.println(scream);
 	}
 
 	/**
 	 * 
 	 * @param scream
 	 */
-	public String getScream(String scream)
+	public String getScream(String _scream)
 	{
-		return "";
+		return this.scream = _scream;
 	}
 
 }

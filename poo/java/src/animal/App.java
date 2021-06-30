@@ -1,6 +1,6 @@
 package animal;
 
-import animal.animal_class_diagram.*;
+import animal.animal_class.*;
 
 public class App
 {
@@ -10,15 +10,21 @@ public class App
         
         //Labrador labrador = new Labrador();
         //Pinscher pinscher = new Pinscher();
-        Labrador labrador = new Labrador();
-        Dog pinscher = new Dog();
+        Labrador rex = new Labrador("Rex");
+        Pinscher medor = new Pinscher("Medor");
 
 
-        System.out.println("Le Labrador s'appel : ");
-        System.out.println(labrador.getName("Rex"));
+        rex.feed();
+        //rex.getScream("Il aboie");
+        rex.move();
 
-        System.out.println("Le Pinscher s'appel : ");
-        System.out.println(pinscher.getName("Medor"));
+
+        medor.feed();
+        //medor.getScream(" aboie toutes les 10 secondes");
+        medor.move();
+        rex.move();
+
+        //rex.move();
 
     }
 }

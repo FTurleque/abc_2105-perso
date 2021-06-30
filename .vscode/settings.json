@@ -1,0 +1,6 @@
+{
+    "java.project.sourcePaths": [
+        "java/algo/src",
+        "poo/java/src/animal"
+    ]
+}

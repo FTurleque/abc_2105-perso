@@ -1,4 +1,4 @@
-package animal.animal_class_diagram;
+package animal.animal_class;
 
 
 /**
@@ -27,7 +27,7 @@ public class Horse extends Herbivorous {
 	 * 
 	 * @param name
 	 */
-	public String getName(String name){
+	public String getName(){
 		return "";
 	}
 
