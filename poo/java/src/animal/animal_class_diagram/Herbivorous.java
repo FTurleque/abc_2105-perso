@@ -1,9 +1,10 @@
-package animal.AnimalClassDiagram;
+package animal.animal_class_diagram;
+
 
 /**
  * @author Stagiaire
  * @version 1.0
- * @created 29-juin-2021 10:36:09
+ * @created 30-juin-2021 08:40:07
  */
 public class Herbivorous extends Animal {
 
