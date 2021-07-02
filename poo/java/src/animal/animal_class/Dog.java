@@ -33,6 +33,7 @@ public class Dog extends Animal
 
 	public void move()
 	{
+		System.out.println("Viens mon chien !");
 		System.out.println(this.getName() +" se déplace.");
 	}
 

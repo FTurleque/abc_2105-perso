@@ -22,6 +22,7 @@ public class Labrador extends Dog
 
 	public void move()
 	{
+		System.out.println("Viens mon chien !");
 		if (this.labradorMove == true) 
 		{
 			System.out.println(this.getName() + " se déplace.");

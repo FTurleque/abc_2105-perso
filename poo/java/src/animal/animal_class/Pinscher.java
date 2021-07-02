@@ -20,9 +20,9 @@ public class Pinscher extends Dog {
 	}
 	
 
-	// public void scream()
-	// {
+	public void scream()
+	{
 		
-	// }
+	}
 
 }
