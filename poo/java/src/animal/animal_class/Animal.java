@@ -31,10 +31,15 @@ public abstract class Animal
 	 * 
 	 * @param _specie
 	 */
-	// public Animal Animal(String _specie)
+	// public Animal(String _specie)
 	// {
 	// 	return null;
 	// }
+
+	public void getSpecie(String _specie)
+	{
+		this.specie = _specie;
+	}
 
 	/**
 	 * bee : foraging
@@ -44,10 +49,10 @@ public abstract class Animal
 
 	}
 
-	public String getSpecie()
-	{
-		return "";
-	}
+	// public String getSpecie()
+	// {
+	// 	return "";
+	// }
 
 	public void move()
 	{

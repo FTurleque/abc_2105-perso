@@ -17,6 +17,7 @@ public class App
         medor.feed();
         medor.move();
         rex.move();
+        medor.scream(" aboie.");
 
 
     }
