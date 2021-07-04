@@ -22,20 +22,6 @@ public abstract class Animal
 
 	}
 
-	// public void finalize() throws Throwable 
-	// {
-
-	// }
-
-	/**
-	 * 
-	 * @param _specie
-	 */
-	// public Animal(String _specie)
-	// {
-	// 	return null;
-	// }
-
 	public void getSpecie(String _specie)
 	{
 		this.specie = _specie;
@@ -48,11 +34,6 @@ public abstract class Animal
 	{
 
 	}
-
-	// public String getSpecie()
-	// {
-	// 	return "";
-	// }
 
 	public void move()
 	{

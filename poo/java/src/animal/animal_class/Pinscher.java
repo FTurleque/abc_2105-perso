@@ -16,10 +16,9 @@ public class Pinscher extends Dog {
 	// 	super.finalize();
 	// }
 
-	public Pinscher(String _name)
+	public Pinscher(String _specie, String _name)
 	{
-		super(_name);
-		scream();
+		super(_specie, _name);
 	}
 	
 

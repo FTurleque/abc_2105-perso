@@ -16,15 +16,11 @@ public class Dog extends Animal
 	 * 
 	 * @param _name
 	 */
-	public Dog(String _name)
+	public Dog(String _specie, String _name)
 	{
+		getSpecie(_specie);
 		this.name = _name;
 	}
-
-	// public void finalize() throws Throwable 
-	// {
-	// 	super.finalize();
-	// }
 
 	public void feed()
 	{
@@ -33,7 +29,6 @@ public class Dog extends Animal
 
 	public void move()
 	{
-		System.out.println("Viens mon chien !");
 		System.out.println(this.getName() +" se déplace.");
 	}
 

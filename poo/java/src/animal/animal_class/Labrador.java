@@ -10,9 +10,9 @@ public class Labrador extends Dog
 {
 	private Boolean labradorMove = true;
 
-	public Labrador(String _name)
+	public Labrador(String _specie, String _name)
 	{
-		super(_name);
+		super(_specie, _name);
 	}
 
 	// public void finalize() throws Throwable 
@@ -22,7 +22,6 @@ public class Labrador extends Dog
 
 	public void move()
 	{
-		System.out.println("Viens mon chien !");
 		if (this.labradorMove == true) 
 		{
 			System.out.println(this.getName() + " se déplace.");
