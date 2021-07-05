@@ -9,9 +9,9 @@ package animal.animal_class;
  */
 public class Giraffe extends Herbivorous {
 
-	public Giraffe(String _specie)
+	public Giraffe()
 	{
-		super(_specie);
+		super("Giraffe");
 	}
 
 	public void move()

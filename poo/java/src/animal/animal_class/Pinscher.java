@@ -10,15 +10,9 @@ import java.util.TimerTask;
  */
 public class Pinscher extends Dog {
 
-
-
-	// public void finalize() throws Throwable {
-	// 	super.finalize();
-	// }
-
-	public Pinscher(String _specie, String _name)
+	public Pinscher(String _name)
 	{
-		super(_specie, _name);
+		super(_name);
 	}
 	
 

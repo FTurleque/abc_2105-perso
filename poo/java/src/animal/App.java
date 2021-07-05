@@ -8,11 +8,11 @@ public class App
     public static void main(String[] args) 
     {
         
-        Labrador rex = new Labrador("Le Labrador" ,"Rex");
-        Pinscher medor = new Pinscher("Le Pinscher" ,"Medor");
-        Bee maya = new Bee("Abeille");
-        Horse horse = new Horse("Cheval");
-        Giraffe giraffe = new Giraffe("Giraffe");
+        Labrador rex = new Labrador("Rex");
+        Pinscher medor = new Pinscher("Medor");
+        Bee maya = new Bee();
+        Horse horse = new Horse();
+        Giraffe giraffe = new Giraffe();
 
         rex.feed();
         rex.move();

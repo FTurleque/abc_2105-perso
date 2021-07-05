@@ -10,9 +10,9 @@ public class Labrador extends Dog
 {
 	private Boolean labradorMove = true;
 
-	public Labrador(String _specie, String _name)
+	public Labrador(String _name)
 	{
-		super(_specie, _name);
+		super(_name);
 	}
 
 	public void move()

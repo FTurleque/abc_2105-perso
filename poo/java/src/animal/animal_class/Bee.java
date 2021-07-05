@@ -9,9 +9,9 @@ package animal.animal_class;
  */
 public class Bee extends Animal {
 
-	public Bee(String _specie)
+	public Bee()
 	{
-		this.getSpecie(_specie);
+		super("Abeille");
 	}
 
 	public void feed()

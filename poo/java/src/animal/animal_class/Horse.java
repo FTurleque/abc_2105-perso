@@ -11,22 +11,14 @@ public class Horse extends Herbivorous {
 
 	//private String name;
 
-	public Horse(String _specie)
+	public Horse()
 	{
-		super(_specie);
+		super("Cheval");
 	}
 
 	public void feed()
 	{
 		System.out.println("Un cheval mange de l'herbe et du foin.");
 	}
-
-	/**
-	 * 
-	 * @param name
-	 */
-	// public String getName(){
-	// 	return "";
-	// }
 
 }

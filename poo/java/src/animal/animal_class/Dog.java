@@ -16,15 +16,15 @@ public class Dog extends Animal
 	 * 
 	 * @param _name
 	 */
-	public Dog(String _specie, String _name)
+	public Dog(String _name)
 	{
-		this.getSpecie(_specie);
+		super("Chien");
 		this.name = _name;
 	}
 
 	public void feed()
 	{
-		System.out.println(this.getName() +" mange de la pâtés.");
+		System.out.println(this.getName() + " mange de la pâtés.");
 	}
 
 	public void move()

@@ -9,22 +9,17 @@ public abstract class Animal
 {
 
 	private String specie;
-	/**
-	 * Giraffe = moose
-	 * Bee = buzz
-	 * Dog = barks
-	 * Horse = neighs
-	 */
 	private String scream;
 
-	public Animal()
+	public Animal(String _specie)
 	{
+		this.specie = _specie;
 
 	}
 
-	public String getSpecie(String _specie)
+	public String getSpecie()
 	{
-		return this.specie = _specie;
+		return this.specie;
 	}
 
 	/**
