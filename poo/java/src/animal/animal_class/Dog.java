@@ -18,7 +18,7 @@ public class Dog extends Animal
 	 */
 	public Dog(String _specie, String _name)
 	{
-		getSpecie(_specie);
+		this.getSpecie(_specie);
 		this.name = _name;
 	}
 
@@ -29,7 +29,7 @@ public class Dog extends Animal
 
 	public void move()
 	{
-		System.out.println(this.getName() +" se déplace.");
+		System.out.println(this.getName() + " se déplace.");
 	}
 
 	/**

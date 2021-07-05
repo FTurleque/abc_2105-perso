@@ -9,16 +9,14 @@ package animal.animal_class;
  */
 public class Giraffe extends Herbivorous {
 
-	public Giraffe(){
-
+	public Giraffe(String _specie)
+	{
+		super(_specie);
 	}
 
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-	public void move(){
-
+	public void move()
+	{
+		System.out.println("La girafe se déplace doucement.");
 	}
 
 }

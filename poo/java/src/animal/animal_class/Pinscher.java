@@ -27,12 +27,12 @@ public class Pinscher extends Dog {
 		int delay = 0;
 		int period = 10000; // Répéter toutes les secondes
 		Timer timer = new Timer(); 
-		timer.scheduleAtFixedRate(
+		timer.schedule(
 		new TimerTask() 
 		{	
 			public void run()
 			{  
-				System.out.println(getName() + getScream(_scream));;
+				System.out.println(getName() + getScream(_scream));
 			}
 		}, 
 		delay, period);

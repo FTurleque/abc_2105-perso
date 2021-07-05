@@ -9,26 +9,24 @@ package animal.animal_class;
  */
 public class Horse extends Herbivorous {
 
-	private String name;
+	//private String name;
 
-	public Horse(){
-
+	public Horse(String _specie)
+	{
+		super(_specie);
 	}
 
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-	public void feed(){
-
+	public void feed()
+	{
+		System.out.println("Un cheval mange de l'herbe et du foin.");
 	}
 
 	/**
 	 * 
 	 * @param name
 	 */
-	public String getName(){
-		return "";
-	}
+	// public String getName(){
+	// 	return "";
+	// }
 
 }

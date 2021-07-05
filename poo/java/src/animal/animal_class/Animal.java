@@ -22,9 +22,9 @@ public abstract class Animal
 
 	}
 
-	public void getSpecie(String _specie)
+	public String getSpecie(String _specie)
 	{
-		this.specie = _specie;
+		return this.specie = _specie;
 	}
 
 	/**
@@ -40,8 +40,9 @@ public abstract class Animal
 		System.out.println("Il se déplace.");
 	}
 
-	public void scream()
+	public void scream(String _scream)
 	{
+		this.scream = _scream;
 		System.out.println(scream);
 	}
 

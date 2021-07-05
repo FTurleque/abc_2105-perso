@@ -8,20 +8,15 @@ package animal.animal_class;
  */
 public class Herbivorous extends Animal {
 
-	public Herbivorous(){
-
+	public Herbivorous(String _specie)
+	{
+		super();
+		this.getSpecie(_specie);
 	}
 
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-	public Herbivorous Herbivorious(){
-		return null;
-	}
-
-	public void feed(){
-
+	public void feed(String _specie)
+	{
+		System.out.println(this.getSpecie(_specie) + "Mange des végétaux");
 	}
 
 }

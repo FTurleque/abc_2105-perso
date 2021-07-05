@@ -15,11 +15,6 @@ public class Labrador extends Dog
 		super(_specie, _name);
 	}
 
-	// public void finalize() throws Throwable 
-	// {
-	// 	super.finalize();
-	// }
-
 	public void move()
 	{
 		if (this.labradorMove == true) 

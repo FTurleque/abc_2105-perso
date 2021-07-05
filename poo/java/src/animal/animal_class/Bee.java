@@ -9,20 +9,19 @@ package animal.animal_class;
  */
 public class Bee extends Animal {
 
-	public Bee(){
-
+	public Bee(String _specie)
+	{
+		this.getSpecie(_specie);
 	}
 
-	public void finalize() throws Throwable {
-		super.finalize();
+	public void feed()
+	{
+		System.out.println("Une abeille mange du nectar.");
 	}
 
-	public void feed(){
-
-	}
-
-	public void move(){
-
+	public void move()
+	{
+		System.out.println("Une abeille se déplace en volant");
 	}
 
 }
