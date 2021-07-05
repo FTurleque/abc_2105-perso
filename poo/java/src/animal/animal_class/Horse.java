@@ -16,9 +16,9 @@ public class Horse extends Herbivorous {
 		super("Cheval");
 	}
 
-	public void feed()
+	public String feed(String horseFeed)
 	{
-		System.out.println("Un cheval mange de l'herbe et du foin.");
+		return "Un " + this.getSpecie() + horseFeed;
 	}
 
 }

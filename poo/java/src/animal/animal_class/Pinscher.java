@@ -19,7 +19,7 @@ public class Pinscher extends Dog {
 	public void scream(String _scream)
 	{
 		int delay = 0;
-		int period = 10000; // Répéter toutes les secondes
+		int period = 5000; // Répéter toutes les secondes
 		Timer timer = new Timer(); 
 		timer.schedule(
 		new TimerTask() 

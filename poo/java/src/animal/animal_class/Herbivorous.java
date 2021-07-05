@@ -13,9 +13,9 @@ abstract class Herbivorous extends Animal {
 		super(_specie);
 	}
 
-	public void feed()
+	public String feed(String herbivorousFeed)
 	{
-		System.out.println("L'herbivore mange des végétaux");
+		return herbivorousFeed;
 	}
 
 }

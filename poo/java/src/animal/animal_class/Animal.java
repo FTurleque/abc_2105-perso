@@ -25,14 +25,14 @@ public abstract class Animal
 	/**
 	 * bee : foraging
 	 */
-	public void feed()
-	{
+	// public void feed()
+	// {
 
-	}
+	// }
 
-	public void move()
+	public String move(String dogMove)
 	{
-		System.out.println("Il se déplace.");
+		return dogMove;
 	}
 
 	public void scream(String _scream)

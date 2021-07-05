@@ -22,14 +22,14 @@ public class Dog extends Animal
 		this.name = _name;
 	}
 
-	public void feed()
+	public String feed(String dogFeed)
 	{
-		System.out.println(this.getName() + " mange de la pâtés.");
+		return this.getName() + dogFeed;
 	}
 
-	public void move()
+	public String move(String dogMove)
 	{
-		System.out.println(this.getName() + " se déplace.");
+		return this.getName() + dogMove;
 	}
 
 	/**

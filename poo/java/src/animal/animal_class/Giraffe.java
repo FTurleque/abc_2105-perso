@@ -14,9 +14,9 @@ public class Giraffe extends Herbivorous {
 		super("Giraffe");
 	}
 
-	public void move()
+	public String move(String giraffeMove)
 	{
-		System.out.println("La girafe se déplace doucement.");
+		return "La " + this.getSpecie() + giraffeMove;
 	}
 
 }

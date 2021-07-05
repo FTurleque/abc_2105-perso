@@ -14,14 +14,14 @@ public class Bee extends Animal {
 		super("Abeille");
 	}
 
-	public void feed()
+	public String feed(String beeFeed)
 	{
-		System.out.println("Une abeille mange du nectar.");
+		return "Une " + getSpecie() + beeFeed;
 	}
 
-	public void move()
+	public String move(String beeMove)
 	{
-		System.out.println("Une abeille se déplace en volant");
+		return "Une " + getSpecie() + beeMove;
 	}
 
 }
