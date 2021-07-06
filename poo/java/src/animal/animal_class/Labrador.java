@@ -8,24 +8,24 @@ package animal.animal_class;
  */
 public class Labrador extends Dog 
 {
-	private Boolean labradorMove = true;
+	private String labradorMove = "true";
 
 	public Labrador(String _name)
 	{
 		super(_name);
 	}
 
-	public void move()
+	public String move()
 	{
-		if (this.labradorMove == true) 
+		if (this.labradorMove == "true") 
 		{
-			System.out.println(this.getName() + " se déplace.");
-			this.labradorMove = false;
+			this.labradorMove = "false";
+			return this.getName() + " se déplace.";
 		} 
 		else 
 		{
-			System.out.println(this.getName() + " reste sur place.");
-			this.labradorMove = true;
+			this.labradorMove = "true";
+			return this.getName() + " reste sur place.";
 		}
 	}
 

@@ -15,27 +15,27 @@ public class App
         Giraffe giraffe = new Giraffe();
 
         System.out.println(rex.feed(" mange de la pâtés."));
-        rex.move();
+        System.out.println(rex.move());
         rex.scream("Aboie");
 
         System.out.println(medor.feed(" mange de la pâtés."));
         System.out.println(medor.move(" se déplace."));
         medor.scream(" aboie.");
-        rex.move();
+        System.out.println(rex.move());
 
         System.out.println(maya.feed(" mange du nectar."));
         System.out.println(maya.move(" se déplace en volant"));
         maya.scream("L'abeille bourdonne.");
-        rex.move();
+        System.out.println(rex.move());
 
         System.out.println(horse.feed(" mange de l'herbe et du foin."));
         horse.scream("Un cheval hennit.");
-        rex.move();
+        System.out.println(rex.move());
 
         System.out.println(giraffe.feed("La Giraffe mange des végétaux"));
         System.out.println(giraffe.move(" se déplace doucement."));
         giraffe.scream("La giraffe meugle.");
-        rex.move();
+        System.out.println(rex.move());
 
     }
 }
