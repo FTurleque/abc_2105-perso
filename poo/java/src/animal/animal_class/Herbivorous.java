@@ -6,7 +6,7 @@ package animal.animal_class;
  * @version 1.0
  * @created 30-juin-2021 08:40:07
  */
-abstract class Herbivorous extends Animal {
+public abstract class Herbivorous extends Animal {
 
 	public Herbivorous(String _specie)
 	{

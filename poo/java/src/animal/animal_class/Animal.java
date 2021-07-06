@@ -30,9 +30,9 @@ public abstract class Animal
 
 	// }
 
-	public String move(String dogMove)
+	public String move(String animalMove)
 	{
-		return dogMove;
+		return animalMove;
 	}
 
 	public void scream(String _scream)
