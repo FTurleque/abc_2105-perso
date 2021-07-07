@@ -1,7 +1,7 @@
 package animal.animal_class;
 
 import java.util.Timer;
-import java.util.TimerTask;
+import animal.*;
 
 /**
  * @author Stagiaire
@@ -10,25 +10,21 @@ import java.util.TimerTask;
  */
 public class Pinscher extends Dog {
 
+	//private String scream;
+
 	public Pinscher(String _name)
 	{
 		super(_name);
 	}
 	
 
-	public void scream(String _scream)
+	public void scream()
 	{
 		int delay = 0;
-		int period = 5000; // Répéter toutes les secondes
+		int period = 500; // Répéter toutes les secondes
 		Timer timer = new Timer(); 
 		timer.schedule(
-		new TimerTask() 
-		{	
-			public void run()
-			{  
-				System.out.println(getName() + getScream(_scream));
-			}
-		}, 
+		new TimerTest(this), 
 		delay, period);
 	}
 

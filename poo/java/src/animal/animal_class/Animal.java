@@ -38,7 +38,7 @@ public abstract class Animal
 	public void scream(String _scream)
 	{
 		this.scream = _scream;
-		System.out.println(scream);
+		System.out.println(this.scream);
 	}
 
 	/**
