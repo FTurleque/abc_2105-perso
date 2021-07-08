@@ -14,21 +14,12 @@ public abstract class Animal
 	public Animal(String _specie)
 	{
 		this.specie = _specie;
-
 	}
 
 	public String getSpecie()
 	{
 		return this.specie;
 	}
-
-	/**
-	 * bee : foraging
-	 */
-	// public void feed()
-	// {
-
-	// }
 
 	public String move(String animalMove)
 	{
