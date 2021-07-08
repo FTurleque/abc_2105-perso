@@ -16,11 +16,11 @@ public class App
 
         System.out.println(rex.feed(" mange de la pâtés."));
         System.out.println(rex.move());
-        rex.scream("Aboie");
+        rex.scream("Rex aboie");
 
         System.out.println(medor.feed(" mange de la pâtés."));
         System.out.println(medor.move(" se déplace."));
-        medor.scream(" aboie.");
+        medor.scream();
         System.out.println(rex.move());
 
         System.out.println(maya.feed(" mange du nectar."));
