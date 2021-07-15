@@ -21,11 +21,7 @@ public class TypeOfCard {
 	 * Feu
 	 * Lumi�re
 	 */
-	private String vitalEnergies;
-
-	public TypeOfCard(){
-
-	}
+	private VitalEnergies vitalEnergies;
 
 	public void finalize() throws Throwable {
 
@@ -37,8 +33,11 @@ public class TypeOfCard {
 	 * @param _description
 	 * @param _id
 	 */
-	public TypeOfCard TypeOfCard(VitalEnergies _vitalEnergies, String _description, int _id){
-		return null;
+	public TypeOfCard(VitalEnergies _vitalEnergies, String _description, int _id){
+		this.vitalEnergies = _vitalEnergies;
+		this.id = _id;
+		this.description = _description;
+
 	}
 
 	public int getId(){

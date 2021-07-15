@@ -17,10 +17,6 @@ public class Player {
 	private Card cards;
 	public Player m_Player;
 
-	public Player(){
-
-	}
-
 	public void finalize() throws Throwable {
 
 	}
@@ -32,8 +28,11 @@ public class Player {
 	 * @param _firstName
 	 * @param _psedo
 	 */
-	public Player Player(String _email, String _lastName, String _firstName, String _pseudo){
-		return null;
+	public Player(String _email, String _lastName, String _firstName, String _pseudo){
+		this.setEmail(_email);
+		this.setPseudo(_pseudo);
+		this.setFirstName(_firstName);
+		this.setLastName(_lastName);
 	}
 
 	public String getPseudo(){
@@ -44,7 +43,19 @@ public class Player {
 	 * 
 	 * @param _pseudo
 	 */
-	public String setPseudo(String _pseudo){
+	public String setPseudo(String _pseudo)
+	{
+		try {
+			if (_pseudo.isEmpty())
+			{
+				throw new Exception("Veuillez renseigner votre pseudo : ");
+			}
+		} catch (Exception e) {
+			//TODO: handle exception
+			return e.getMessage();
+		}
+
+		this.pseudo = _pseudo;
 		return this.pseudo;
 	}
 
@@ -52,7 +63,39 @@ public class Player {
 		return this.firstName;
 	}
 
+	public String setFirstName(String _firstName)
+	{
+		try {
+			if (_firstName.isEmpty())
+			{
+				throw new Exception("Veuillez renseigner votre prénom : ");
+			}
+		} catch (Exception e) {
+			//TODO: handle exception
+			return e.getMessage();
+		}
+
+		this.firstName = _firstName;
+		return this.firstName;
+	}
+
 	public String getLastName(){
+		return this.lastName;
+	}
+
+	public String setLastName(String _lastName)
+	{
+		try {
+			if (_lastName.isEmpty())
+			{
+				throw new Exception("Veuillez renseigner votre prénom : ");
+			}
+		} catch (Exception e) {
+			//TODO: handle exception
+			return e.getMessage();
+		}
+
+		this.lastName = _lastName;
 		return this.lastName;
 	}
 
@@ -65,6 +108,17 @@ public class Player {
 	 * @param _email
 	 */
 	public String setEmail(String _email){
+		try {
+			if (_email.isEmpty())
+			{
+				throw new Exception("Veuillez renseigner votre adresse mail.");
+			}
+		} catch (Exception e) {
+			//TODO: handle exception
+			return e.getMessage();
+		}
+
+		this.email = _email;
 		return this.email;
 	}
 
