@@ -17,7 +17,8 @@ public class Player {
 	private Card cards;
 	public Player m_Player;
 
-	public void finalize() throws Throwable {
+	public void finalize() throws Throwable 
+	{
 
 	}
 
@@ -28,14 +29,16 @@ public class Player {
 	 * @param _firstName
 	 * @param _psedo
 	 */
-	public Player(String _email, String _lastName, String _firstName, String _pseudo){
+	public Player(String _email, String _lastName, String _firstName, String _pseudo)
+	{
 		this.setEmail(_email);
 		this.setPseudo(_pseudo);
 		this.setFirstName(_firstName);
 		this.setLastName(_lastName);
 	}
 
-	public String getPseudo(){
+	public String getPseudo()
+	{
 		return this.pseudo;
 	}
 
@@ -59,7 +62,8 @@ public class Player {
 		return this.pseudo;
 	}
 
-	public String getFirstName(){
+	public String getFirstName()
+	{
 		return this.firstName;
 	}
 
@@ -79,7 +83,8 @@ public class Player {
 		return this.firstName;
 	}
 
-	public String getLastName(){
+	public String getLastName()
+	{
 		return this.lastName;
 	}
 
@@ -107,7 +112,8 @@ public class Player {
 	 * 
 	 * @param _email
 	 */
-	public String setEmail(String _email){
+	public String setEmail(String _email)
+	{
 		try {
 			if (_email.isEmpty())
 			{
@@ -127,7 +133,8 @@ public class Player {
 	 * @param _hand
 	 * @param _card
 	 */
-	public Card[] takeCardsHand(int _hand, Card _card){
+	public Card[] takeCardsHand(int _hand, Card _card)
+	{
 		return null;
 	}
 

@@ -15,6 +15,7 @@ public class TypeOfCard {
 	private int id;
 	private String className;
 	private String description;
+	private TypeOfCardName typeOfCardName;
 	/**
 	 * Nature
 	 * Givre
@@ -23,7 +24,8 @@ public class TypeOfCard {
 	 */
 	private VitalEnergies vitalEnergies;
 
-	public void finalize() throws Throwable {
+	public void finalize() throws Throwable 
+	{
 
 	}
 
@@ -33,26 +35,32 @@ public class TypeOfCard {
 	 * @param _description
 	 * @param _id
 	 */
-	public TypeOfCard(VitalEnergies _vitalEnergies, String _description, int _id){
+	public TypeOfCard(TypeOfCardName _typeOfCardName, VitalEnergies _vitalEnergies, String _description, int _id)
+	{
+		this.typeOfCardName = _typeOfCardName;
 		this.vitalEnergies = _vitalEnergies;
 		this.id = _id;
 		this.description = _description;
 
 	}
 
-	public int getId(){
+	public int getId()
+	{
 		return this.id;
 	}
 
-	public String getClassName(){
+	public String getClassName()
+	{
 		return this.className;
 	}
 
-	public String getDescription(){
+	public String getDescription()
+	{
 		return this.description;
 	}
 
-	public String getvitalEnergies(){
+	public VitalEnergies getvitalEnergies()
+	{
 		return this.vitalEnergies;
 	}
 

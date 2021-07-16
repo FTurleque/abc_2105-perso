@@ -14,7 +14,8 @@ public class Card {
 	private String capacity;
 	private TypeOfCard typeOfCards;
 
-	public void finalize() throws Throwable {
+	public void finalize() throws Throwable 
+	{
 
 	}
 
@@ -25,7 +26,8 @@ public class Card {
 	 * @param _power
 	 * @param _nameOfCard
 	 */
-	public Card(TypeOfCard _TypeOfCard, String _capacity, String _armor, int _power, String _nameOfCard){
+	public Card(TypeOfCard _TypeOfCard, String _capacity, String _armor, int _power, String _nameOfCard)
+	{
 		this.typeOfCards = _TypeOfCard;
 		this.capacity = _capacity;
 		this.armor = _armor;
@@ -33,19 +35,29 @@ public class Card {
 		this.nameOfCard = _nameOfCard;
 	}
 
-	public String getNameOfCard(){
+	public String getNameOfCard()
+	{
 		return this.nameOfCard;
 	}
 
-	public String getArmor(){
+	public String getArmor()
+	{
 		return this.armor;
 	}
 
-	public int getPower(){
+	public int getPower()
+	{
 		return this.power;
 	}
 
-	public String getCapacity(){
+	public int setPower(int _power)
+	{
+		this.power = _power;
+		return this.power;
+	}
+
+	public String getCapacity()
+	{
 		return this.capacity;
 	}
 
