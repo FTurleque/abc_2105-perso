@@ -15,7 +15,7 @@ public class TypeOfCard {
 	private int id;
 	private String className;
 	private String description;
-	private TypeOfCardName typeOfCardName;
+	private String typeOfCardName;
 	/**
 	 * Nature
 	 * Givre
@@ -35,7 +35,7 @@ public class TypeOfCard {
 	 * @param _description
 	 * @param _id
 	 */
-	public TypeOfCard(TypeOfCardName _typeOfCardName, VitalEnergies _vitalEnergies, String _description, int _id)
+	public TypeOfCard(String _typeOfCardName, VitalEnergies _vitalEnergies, String _description, int _id)
 	{
 		this.typeOfCardName = _typeOfCardName;
 		this.vitalEnergies = _vitalEnergies;

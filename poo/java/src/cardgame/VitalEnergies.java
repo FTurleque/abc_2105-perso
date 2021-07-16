@@ -8,7 +8,7 @@ package cardgame;
  */
 public enum VitalEnergies {
 	NATURE,
-	THE_GIVER,
+	FROST,
 	FIRE,
 	LIGHT;
 
