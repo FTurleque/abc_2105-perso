@@ -10,16 +10,6 @@ public class Apple extends Fruit {
 
 	private boolean redLabel;
 
-	public Apple()
-	{
-
-	}
-
-	// public void finalize() throws Throwable 
-	// {
-	// 	super.finalize();
-	// }
-
 	public boolean isRedLabel()
 	{
 

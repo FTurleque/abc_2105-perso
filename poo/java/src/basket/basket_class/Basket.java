@@ -9,15 +9,14 @@ package basket.basket_class;
 public class Basket {
 
 	private int ref;
-	private Fruit fruits;
-	private float totalPrice;
+	private Fruit[] fruits;
 
 	/**
 	 * 
 	 * @param fruit
 	 * @param ref
 	 */
-	public Basket(Fruit fruit, int _ref)
+	public Basket(Fruit fruit, int ref)
 	{
 
 	}

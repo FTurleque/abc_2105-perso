@@ -10,16 +10,7 @@ public class Fruit {
 
 	private String label;
 	private float price;
-	public Customer m_Customer;
 
-	public Fruit()
-	{
-
-	}
-
-	// public void finalize() throws Throwable {
-
-	// }
 
 	public String getLabel()
 	{
@@ -35,7 +26,7 @@ public class Fruit {
 	 * 
 	 * @param price
 	 */
-	public void setPrice(float _price)
+	public void setPrice(float price)
 	{
 
 	}

@@ -10,21 +10,13 @@ public class Customer {
 
 	private int clientid;
 	private Basket[] items;
-
-	public Customer()
-	{
-
-	}
-
-	// public void finalize() throws Throwable {
-
-	// }
+	private Fruit sample;
 
 	/**
 	 * 
 	 * @param clientid
 	 */
-	public Customer(int _clientid)
+	public Customer(int clientid)
 	{
 
 	}

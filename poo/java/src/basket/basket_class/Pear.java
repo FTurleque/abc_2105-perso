@@ -10,15 +10,6 @@ public class Pear extends Fruit {
 
 	private String color;
 
-	public Pear()
-	{
-
-	}
-
-	// public void finalize() throws Throwable {
-	// 	super.finalize();
-	// }
-
 	public String getColor()
 	{
 
@@ -26,9 +17,9 @@ public class Pear extends Fruit {
 
 	/**
 	 * 
-	 * @param _color
+	 * @param color
 	 */
-	public void setColor(String _color)
+	public void setColor(String color)
 	{
 
 	}
