@@ -6,8 +6,8 @@ import java.lang.Math;
 public class App {
     static Scanner scanner = new Scanner(System.in);
     static String userEnter = new String();
-    static int ray = 0;
-    static int angle = 0;
+    static double ray = 0;
+    static double angle = 0;
     private static double aire;
     
 
@@ -23,14 +23,14 @@ public class App {
         System.out.println("L'aire du secteur circulaire est de : " + sectorArea());
     }
 
-    static int userEnterRay(String message) {
+    static double userEnterRay(String message) {
 
         do {
             System.out.println(message);
             userEnter = scanner.nextLine();
 
             try {
-                return Integer.parseInt(userEnter);
+                return Double.parseDouble(userEnter);
             } catch (Exception e) {
                 //TODO: handle exception
                 System.err.println("Vous n'avez pas rentrer un nombre ! Recommencez !");
@@ -38,14 +38,14 @@ public class App {
         } while (true);
     }
 
-    static int userEnterAngle(String message) {
+    static double userEnterAngle(String message) {
 
         do {
             System.out.println(message);
             userEnter = scanner.nextLine();
 
             try {
-                return Integer.parseInt(userEnter);
+                return Double.parseDouble(userEnter);
             } catch (Exception e) {
                 //TODO: handle exception
                 System.err.println("Vous n'avez pas rentrer un nombre ! Recommencez !");

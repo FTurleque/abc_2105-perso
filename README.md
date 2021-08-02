@@ -13,15 +13,16 @@ Exercice 1.7 : Tri de nombres
 Exercice 1.8 : Année Bissextile  
 Exercice 2.1 : Conversion Kilomètres <-> Miles  
 Exercice 2.2 : Conversion Degrés Fahrenheit (°F) <--> Degrés Celsius (°C)  
+Exercice 2.6 : Ma bicyclette  
 Exercice 3.1 : Rechercher un nombre dans un tableau  
 Exercice 3.2 : Rechercher une lettre dans un chaine de caractères // A finir  
 
 Exercices en Java
 
 Exercice : Hello World  
-Exercice 1.1.1 : Calcul de la moyenne de 2 nombres <=> with try catch and function // don't accept float in enter  
-Exercice 1.2 : Calcul de l’aire et du volume d’une sphère <=> with try catch and function // don't accept float in enter  
-Exercice 1.3 : Calcul de la surface d’un secteur circulaire <=> with try catch and function // don't accept float in enter  
+Exercice 1.1.1 : Calcul de la moyenne de 2 nombres <=> with try catch and function (0.00)  
+Exercice 1.2 : Calcul de l’aire et du volume d’une sphère <=> with try catch and function (0.00)  
+Exercice 1.3 : Calcul de la surface d’un secteur circulaire <=> with try catch and function (0.00)  
 Exercice 1.4 : Inversion de 2 valeurs <=> with try catch and function  
 Exercice 1.5 : Calcul d’intérêts <=> with try catch and function  
 Exercice 1.6 : Nombre Premier <=> with try catch and function  
@@ -30,5 +31,7 @@ Exercice 1.8 : Année Bissextile <=> with try catch and function
 Exercice 2.1 : Conversion Kilomètres <-> Miles version 1 <=> with try catch and function // a revoir  
 Exercice 2.1 : Conversion Kilomètres <-> Miles version 2  
 Exercice 2.1 : Conversion Kilomètres <-> Miles // finir version 3  
-Exercice 2.2 : Conversion Degrés Fahrenheit (°F) <--> Degrés Celsius (°C)  
+Exercice 2.2 : Conversion Degrés Fahrenheit (°F) <--> Degrés Celsius (°C) 
+Exercice 2.6 : Ma bicyclette  <=> with try catch and function  
 Exercice 3.1 : Rechercher un nombre dans un tableau <=> with try catch and function  
+

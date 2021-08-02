@@ -11,7 +11,7 @@ public class App {
     private static double aire;
 
     public static void main(String[] args) {
-        int ray = 0;
+        double ray = 0;
         String rayCircle;
 
         System.out.println("Calcul de l’aire et du volume d’une sphère !");
@@ -27,10 +27,10 @@ public class App {
 
         //System.out.println("Le volume de la sphère est de : " + volume * 4 / 3);
         //System.out.println("Le volume de la sphère est de : " + Math.PI*Math.pow(rayonR, 3) * 4 / 3);
-        System.out.println("Le volume de la sphère est de : " + ((4d / 3d) * volume));
+        System.out.println("Le volume de la sphère est de : " + ((4 / 3) * volume));
     }
 
-    static int userEnter(String userNumber) {
+    static double userEnter(String userNumber) {
         //int rayCircle = 0;
 
         do {
@@ -40,7 +40,7 @@ public class App {
             userNumber = scanner.nextLine();
 
             try {
-                return Integer.parseInt(userNumber);
+                return Double.parseDouble(userNumber);
                 //return rayCircle;
             } catch (Exception e) {
                 //TODO: handle exception
