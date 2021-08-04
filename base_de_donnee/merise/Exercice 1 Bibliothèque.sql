@@ -19,7 +19,7 @@ CREATE TABLE IF NOT EXISTS books
 (
 	book_id INT(11) PRIMARY KEY,
     book_title VARCHAR(64) NOT NULL,
-    book_publisher VARCHAR(32) NULL UNIQUE,
+    book_publisher VARCHAR(32) NULL,
     book_author VARCHAR(32) NULL,
     book_purchasedate DATE NOT NULL,
     book_condition VARCHAR(16)
