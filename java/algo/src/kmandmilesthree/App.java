@@ -1,71 +1,75 @@
 package kmandmilesthree;
 
 import java.util.Scanner;
+// import java.util.Arrays;
 
 public class App {
     static Scanner scanner = new Scanner(System.in);
+    static String userNumber;
+    static String[] boardValious;
+    static String valious = "";
+    static String unity = "";
+    static Boolean go = false;
+    static String[] boardUnit;
+    static String[] boardDistance;
 
     public static void main(String[] args) {
+        boardImplementation("Conversion Kilomètre en Miles et inversement !");
+        distanceConversions();
+    }
 
-        String   userEnter,
-                 go,
-                 unity;
-        String[] boardValious;
-        int valious = 0;
-
-        System.out.println("Conversion Kilomètre en Miles et inversement !");
-        unity = new String();
-        userEnter = new String();
-        boardValious = new String[12];
-
-
+    static String boardImplementation(String message) {
+        System.out.println(message);
+        System.out.println("Choisir des distances Miles (mi) ou Kilomètres (km) séparées d'un espace !");
         do {
-            System.out.println("Choisir plusieurs valeurs et sont unité de mesure suivi d'un espace :");
-            System.out.println("km pour kilomètre et mi pour miles.");
-            System.out.println("Tapez go pour lancer les calculs.");
+            userNumber = scanner.nextLine();
 
-            do {
-                
-                userEnter = scanner.nextLine();
+            if (userNumber.equalsIgnoreCase("quitter")) {
+                System.exit(0);
+            } else if (userNumber.equalsIgnoreCase("go")) {
+                go = true;
+            } else {
+                boardValious = userNumber.split(" ");
+                try {
+                    Integer.parseInt(boardValious[0]);
+                    valious += boardValious[0] + " ";
+                    // valious += boardValious[0] + " ";
+                    saveUnity();
 
-                // I split userEnter in a board with two valious in the format string
-                boardValious = userEnter.split(" ");
-
-                if (!userEnter.equalsIgnoreCase("go")) {
-
-                    // I convert the first box of the table in a integer 
-                    valious = Integer.parseInt(userEnter);
-            
-                    if (boardValious.length < 2) {
-                    unity = "km";
-                    } else {
-                        unity = boardValious[1];
-                    }
-                }
-
-            } while (!userEnter.equals("go"));
-            
-            System.out.println(boardValious[0]);
-            System.out.println(boardValious[1]);
-            System.out.println(boardValious[2]);
-            System.out.println(boardValious[3]);
-            System.out.println(boardValious[4]);
-            System.out.println(boardValious[5]);
-            
-            if (!boardValious[0].equalsIgnoreCase("quit")) {
-                
-
-                if (unity.equalsIgnoreCase("km")) {
-                    System.out.println(valious + " Kilomètre = " + valious/1.609 + " Miles !");
-                } 
-                else if (unity.equalsIgnoreCase("mi")) {
-                    System.out.println(valious + " Miles = " + valious*1.609 + " Kilomètre !");
-                } 
-                else {
-                    System.out.println("Vous n'avez pas saisie une valeur ou quit pour quitter !");
+                    System.out.println("Tapez go pour lancer les calculs si vous avez fini ou recommencez :");
+                } catch (Exception e) {
+                    // TODO: handle exception
+                    System.err.println("Une distance est un chiffre et une unitée de mesure. Recommencez :");
                 }
             }
+        } while (!go);
+        return message;
+    }
 
-        } while (!boardValious[0].equalsIgnoreCase("quit"));
+    static void saveUnity() {
+        if (boardValious.length < 2) {
+            unity += "km ";
+        } else {
+            unity += boardValious[1] + " ";
+        }
+    }
+
+    static void distanceConversions() {
+        boardUnit = unity.split(" ");
+        boardDistance = valious.split(" ");
+
+        for (int index = 0; index < boardDistance.length; index++) {
+            double numDistanceIndex = Double.parseDouble(boardDistance[index]);
+            String numUnitIndex = boardUnit[index];
+
+            if (numUnitIndex.equals("mi")) {
+                System.out.println(
+                        numDistanceIndex + " " + numUnitIndex + " = " + numDistanceIndex * 1.609 + " kilomètres");
+            } else {
+                System.out
+                        .println(numDistanceIndex + " " + numUnitIndex + " = " + numDistanceIndex / 1.609 + " miles ");
+            }
+        }
+        System.exit(0);
     }
 }

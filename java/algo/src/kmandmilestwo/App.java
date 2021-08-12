@@ -24,10 +24,9 @@ public class App {
             // I split userEnter in a board with two valious in the format string
             boardValious = userEnter.split(" ");
             
-            /* Check what is in the table 
+            // Check what is in the table 
             System.out.println(boardValious[0]);
             System.out.println(boardValious[1]);
-            */
             
             if (!boardValious[0].equalsIgnoreCase("quit")) {
                 // I convert the first box of the table in a integer 

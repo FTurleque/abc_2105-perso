@@ -30,7 +30,7 @@ Exercice 1.7 : Tri de nombres
 Exercice 1.8 : Année Bissextile <=> with try catch and function  
 Exercice 2.1 : Conversion Kilomètres <-> Miles version 1 <=> with try catch and function // a revoir  
 Exercice 2.1 : Conversion Kilomètres <-> Miles version 2  
-Exercice 2.1 : Conversion Kilomètres <-> Miles // finir version 3  
+Exercice 2.1 : Conversion Kilomètres <-> Miles version 3 illimited <=> with try cath and function  
 Exercice 2.2 : Conversion Degrés Fahrenheit (°F) <--> Degrés Celsius (°C) 
 Exercice 2.6 : Ma bicyclette  <=> with try catch and function  
 Exercice 3.1 : Rechercher un nombre dans un tableau <=> with try catch and function  
