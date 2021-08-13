@@ -12,16 +12,18 @@ public class App {
 
         System.out.println("Déterminer s’il est un nombre premier !");
 
-        userNumber = getUserEnter("choisir un nombre entier naturel : ");
+        // Save user input in a variable
+        userNumber = getUserEntry("choisir un nombre entier naturel : ");
 
-        userNumber = Math.abs(userNumber); // Pour la valeur absolue d'un nombre.
+        userNumber = Math.abs(userNumber); // For absolute value of a number
 
-        // Pour determiner si un est premier on cherche les diviseur de n, de 2 à racine carrée de n.
+        // To determine if a is prime we look for the divisors of n, from 2 to square root of n
         while (userNumber % diviseur != 0 && diviseur <= Math.sqrt(userNumber)) {
             diviseur++;
         }
 
-        // Un nombre premier admet 2 diviseur 1 et lui même.
+        // A prime number has 2 divisors 1 and itself
+        // Display of the calculation
         if (diviseur > Math.sqrt(userNumber)) {
             System.out.println("Vous avez choisi un nombre premier !");
         } else {
@@ -29,11 +31,13 @@ public class App {
         }
     }
 
-    static int getUserEnter(String message) {
+    // Asks the user to enter a number
+    static int getUserEntry(String message) {
         do {
             System.out.println(message);
             userEnter = scanner.nextLine();
 
+            // Test of the user input
             try {
                 return Integer.parseInt(userEnter);
             } catch (Exception e) {

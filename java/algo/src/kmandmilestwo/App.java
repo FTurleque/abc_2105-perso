@@ -6,8 +6,7 @@ public class App {
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-
-        String   userEnter,
+        String   userEntry,
                  unity;
         String[] boardValious;
         int valious;
@@ -15,14 +14,13 @@ public class App {
         System.out.println("Conversion Kilomètre en Miles et inversement !");
         unity = new String();
 
-
         do {
             System.out.println("Choisir une valeur et sont unité de mesure suivi d'un espace :");
             System.out.println("km pour kilomètre et mi pour miles.");
-            userEnter = scanner.nextLine();
+            userEntry = scanner.nextLine();
         
             // I split userEnter in a board with two valious in the format string
-            boardValious = userEnter.split(" ");
+            boardValious = userEntry.split(" ");
             
             // Check what is in the table 
             System.out.println(boardValious[0]);

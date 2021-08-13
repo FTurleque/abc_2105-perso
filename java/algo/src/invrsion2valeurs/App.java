@@ -10,15 +10,18 @@ public class App {
     public static void main(String[] args) {
         System.out.println("Inversion de deux valeurs !");
 
+        // Save user input in a variable
         a = askNumber("Choisir une valeur entiere pour a :");
         b = askNumber("Choisir une valeur entiere pour b :");
 
         inversionAB();
 
+        // Display of the calculation
         System.out.println("La valeur de (a) devient: " + a);
         System.out.println("La valeur de (b) devient: " + b);
     }
 
+    // Asks the user to enter a number
     static int askNumber(String message) {
         String userEnter;
 
@@ -26,6 +29,7 @@ public class App {
             System.out.println(message);
             userEnter = scanner.nextLine();
 
+            // Test of the user input
             try {
                 return Integer.parseInt(userEnter);
             } catch (Exception e) {

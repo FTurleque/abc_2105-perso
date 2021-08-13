@@ -11,39 +11,38 @@ public class App {
     private static double aire;
 
     public static void main(String[] args) {
+        // Variable declaration
         double ray = 0;
         String rayCircle;
 
         System.out.println("Calcul de l’aire et du volume d’une sphère !");
         rayCircle = new String();
 
-        ray = userEnter(rayCircle);
-        
+        // Save user input in a variable
+        ray = userEntry(rayCircle);
+
         // I break down the formulas
-        aire = Math.PI*Math.pow(ray, 2);
-        volume = Math.PI*Math.pow(ray, 3);
+        aire = Math.PI * Math.pow(ray, 2);
+        volume = Math.PI * Math.pow(ray, 3);
 
+        // calculation of the mean
         System.out.println("L'aire de la sphère est de : " + 4 * aire);
-
-        //System.out.println("Le volume de la sphère est de : " + volume * 4 / 3);
-        //System.out.println("Le volume de la sphère est de : " + Math.PI*Math.pow(rayonR, 3) * 4 / 3);
         System.out.println("Le volume de la sphère est de : " + ((4 / 3) * volume));
     }
 
-    static double userEnter(String userNumber) {
-        //int rayCircle = 0;
-
+    // I ask the user to enter a value
+    static double userEntry(String userNumber) {
         do {
             // I print on a screen a sentece
             System.out.println("Choisir le rayon de la sphère : ");
-            // I ask the user to enter a value
             userNumber = scanner.nextLine();
 
+            // Test of the user input
             try {
                 return Double.parseDouble(userNumber);
-                //return rayCircle;
+                // return rayCircle;
             } catch (Exception e) {
-                //TODO: handle exception
+                // TODO: handle exception
                 System.err.println("Vous n'avez pas ecrit un nombre recommencez !");
             }
         } while (true);

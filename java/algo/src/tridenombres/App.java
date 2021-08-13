@@ -3,48 +3,68 @@ package tridenombres;
 import java.util.Scanner;
 
 public class App {
-    
+    static Scanner scanner = new Scanner(System.in);
+    static String   userEntry,
+                    result;
+    static Double userNumber;
+    static  Double  a, 
+                    b, 
+                    c;
+
     public static void main(String[] args) {
-        int a,
-            b,
-            c;
-        Scanner scanner;
-        
         System.out.println("Tri de nombres !");
-        scanner = new Scanner(System.in);
 
-        System.out.println("Choisir un nombre pour a :");
-        a = scanner.nextInt();
+        // Save user input in a variable
+        a = askUserEntry("Choisir un nombre pour a :");
+        b = askUserEntry("Choisir un nombre pour b :");
+        c = askUserEntry("Choisir un nombre pour b :");
 
-        System.out.println("Choisir un nombre pour b :");
-        b = scanner.nextInt();
+        // Display of the result
+        classification("Les nombres dans l'ordre croissant sont : ");
+    }
 
-        System.out.println("Choisir un nombre pour c :");
-        c = scanner.nextInt();
+    // Asks the user to enter a number
+    static Double askUserEntry(String message) {
+        Boolean test;
+        System.out.println(message);
+        do {
+            userEntry = scanner.nextLine();
 
+            // Test of the user input
+            try {
+                userNumber = Double.parseDouble(userEntry);
+                test = true;
+            } catch (Exception e) {
+                // TODO: handle exception
+                System.err.println("Vous n'avez pas choisi un nombre. Recommencez :");
+                test = false;
+            }
+        } while (test = false);
+        return userNumber;
+    }
+
+    static void classification(String message) {
         if (a <= b) {
             if (c > a && c < b) {
-                System.out.println("Les nombres dans l'ordre croissant sont : " + a + " " + c + " " + b);
+                result = a + " " + c + " " + b;
             }
             if (c <= a) {
-                System.out.println("Les nombres dans l'ordre croissant sont : " + c + " " + a + " " + b);
+                result = c + " " + a + " " + b;
             }
             if (c > b) {
-                System.out.println("Les nombres dans l'ordre croissant sont : " + a + " " + b + " " + c);
+                result = a + " " + b + " " + c;
             }
         } else {
             if (c <= b) {
-                System.out.println("Les nombres dans l'ordre croissant sont : " + c + " " + b + " " + a);
+                result = c + " " + b + " " + a;
             }
             if (c > a) {
-                System.out.println("Les nombres dans l'ordre croissant sont : " + b + " " + a + " " + c);
+                result = b + " " + a + " " + c;
             }
-            if ( c > b && c < a) {
-                System.out.println("Les nombres dans l'ordre croissant sont : " + b + " " + c + " " + a);
+            if (c > b && c < a) {
+                result = b + " " + c + " " + a;
             }
         }
-
-        scanner.close();
-
+        System.out.println(message + result);
     }
 }

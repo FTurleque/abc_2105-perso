@@ -7,19 +7,19 @@ public class App {
     static Double userNumber = (double)0;
     static String unity = new String();
     static String exit = new String();
+    static String userEnter;
 
     public static void main(String[] args) {
-        String userEnter;
-
         System.out.println("Conversion kilomètre en Miles et inversement !");
-        userEnter = new String();
         
         do {
-            userNumber = userEnterNumber(userEnter);
+            // Save user input in a variable
+            userNumber = userEntryNumber("Choisir une valeur comprise entre 0.01 et 1 000 000 :");
             
             if (userNumber > 0.01 && userNumber <= 100000) {
-                System.out.println(userEnterUnity());
+                System.out.println(userEntryUnity());
 
+                // Program output
                 exitOrNot("Appuyez sur q pour sortir du programme ou une autre touche pour recommencer !");
             }  else {
                 System.out.println("Vous n'avez pas indiqué une valeur entre 0.001 et 1 000 000 !");
@@ -27,12 +27,13 @@ public class App {
         } while (true);
     }
 
-    static double userEnterNumber(String userEnter) {
-
+    // Asks the user to enter a number
+    static double userEntryNumber(String message) {
+        System.out.println(message);
         do {
-            System.out.println("Choisir une valeur comprise entre 0.01 et 1 000 000 :");
             userEnter = scanner.nextLine();
 
+            // Test of the user input
             try {
                 return Double.parseDouble(userEnter);
             } catch (Exception e) {
@@ -42,21 +43,23 @@ public class App {
         } while (true);
     }
 
-    static String userEnterUnity() {
-
+    // Asks the user to enter a unity
+    static String userEntryUnity() {
         do {
             System.out.println("Choisir l'unitée à convertir, tapez km pour Kilomètre et mi pour Miles :");
             unity = scanner.nextLine();
     
+            // Test of the user input
             try {
                 if (unity.equalsIgnoreCase("km") || unity.equalsIgnoreCase("mi") || unity.isEmpty()) {
+                    // Display of the calculation
                     if (unity.equalsIgnoreCase("km") || unity.isEmpty()) {  
                         return userNumber + " Kilomètre = " + userNumber/1.609 + " Miles !";
                     } else {
                         return userNumber + " Miles = " + userNumber*1.609 + " Kilomètre !";
                     }
                 } else {
-                    // génére une nouvelle exception
+                    // generates a new exception
                     throw new Exception("Ceci est une erreur");
                 }
             } catch (Exception e) {
@@ -66,6 +69,7 @@ public class App {
         } while (true);
     }
 
+    // Program output
     static void exitOrNot(String message) {
         System.out.println(message);
         exit = scanner.nextLine();

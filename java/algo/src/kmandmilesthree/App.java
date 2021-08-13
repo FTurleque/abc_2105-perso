@@ -14,11 +14,12 @@ public class App {
     static String[] boardDistance;
 
     public static void main(String[] args) {
-        boardImplementation("Conversion Kilomètre en Miles et inversement !");
+        askEntryUser("Conversion Kilomètre en Miles et inversement !");
         distanceConversions();
     }
 
-    static String boardImplementation(String message) {
+    // Asks the user to enter a distance
+    static String askEntryUser(String message) {
         System.out.println(message);
         System.out.println("Choisir des distances Miles (mi) ou Kilomètres (km) séparées d'un espace !");
         do {
@@ -30,22 +31,24 @@ public class App {
                 go = true;
             } else {
                 boardValious = userNumber.split(" ");
+
+                // Test of the user input
                 try {
                     Integer.parseInt(boardValious[0]);
                     valious += boardValious[0] + " ";
-                    // valious += boardValious[0] + " ";
                     saveUnity();
 
                     System.out.println("Tapez go pour lancer les calculs si vous avez fini ou recommencez :");
                 } catch (Exception e) {
                     // TODO: handle exception
-                    System.err.println("Une distance est un chiffre et une unitée de mesure. Recommencez :");
+                    System.err.println("Une distance est un chiffre et une unitée de mesure séparé d'un espace. Recommencez :");
                 }
             }
         } while (!go);
         return message;
     }
 
+    // Asks the user to enter a unity
     static void saveUnity() {
         if (boardValious.length < 2) {
             unity += "km ";
@@ -62,6 +65,7 @@ public class App {
             double numDistanceIndex = Double.parseDouble(boardDistance[index]);
             String numUnitIndex = boardUnit[index];
 
+            // Display of the calculation
             if (numUnitIndex.equals("mi")) {
                 System.out.println(
                         numDistanceIndex + " " + numUnitIndex + " = " + numDistanceIndex * 1.609 + " kilomètres");

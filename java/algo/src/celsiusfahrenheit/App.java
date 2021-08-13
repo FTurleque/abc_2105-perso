@@ -4,16 +4,15 @@ import java.util.Scanner;
 import java.util.regex.*;
 
 public class App {
+    static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
         String temperature,
                unite,
                tempEtUnite;
         double number = 0;
-        Scanner scanner;
 
         System.out.println("Conversion Degrés Fahrenheit <=> Degrés Celsius");
-        scanner = new Scanner(System.in);
         tempEtUnite = new String();
         /*temperature = new String();*/
         unite = new String();
@@ -63,9 +62,5 @@ public class App {
             }
             
         } while (!temperature.equalsIgnoreCase("q"));
-
-        scanner.close();
-        
     }
-    
 }
