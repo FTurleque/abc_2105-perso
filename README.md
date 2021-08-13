@@ -31,7 +31,7 @@ Exercice 1.8 : Année Bissextile <=> with try catch and function                
 Exercice 2.1 : Kilomètres <-> Miles v1 <=> with try catch and function                          (0.00)  
 Exercice 2.1 : Kilomètres <-> Miles v2                                                          (0.00)  
 Exercice 2.1 : Kilomètres <-> Miles v3 illimited <=> with try cath (miss in unity) and function (0.00) 
-Exercice 2.2 : Conversion Degrés Fahrenheit (°F) <--> Degrés Celsius (°C) 
+Exercice 2.2 : Fahrenheit (°F) <-> Celsius (°C) <=> with try catch and function                 (0.00)  
 Exercice 2.6 : Ma bicyclette  <=> with try catch and function                                   (0.00)  
 Exercice 3.1 : Rechercher un nombre dans un tableau <=> with try catch and function             (0.00)  
 Exercice 3.2 : Rechercher une lettre dans un chaine de caractères
