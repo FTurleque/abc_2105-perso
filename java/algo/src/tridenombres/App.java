@@ -3,13 +3,14 @@ package tridenombres;
 import java.util.Scanner;
 
 public class App {
-    static Scanner scanner = new Scanner(System.in);
-    static String   userEntry,
-                    result;
-    static Double userNumber;
-    static  Double  a, 
-                    b, 
-                    c;
+    static  Scanner  scanner = new Scanner(System.in);
+    static  String   userEntry,
+                     result;
+    static  Double   userNumber;
+    static  Double   a, 
+                     b, 
+                     c;
+    static  Boolean  test = false;
 
     public static void main(String[] args) {
         System.out.println("Tri de nombres !");
@@ -25,7 +26,6 @@ public class App {
 
     // Asks the user to enter a number
     static Double askUserEntry(String message) {
-        Boolean test;
         System.out.println(message);
         do {
             userEntry = scanner.nextLine();
