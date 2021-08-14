@@ -34,7 +34,7 @@ Exercice 2.1 : Kilomètres <-> Miles v3 illimited <=> with try cath (miss in uni
 Exercice 2.2 : Fahrenheit (°F) <-> Celsius (°C) <=> with try catch and function                 (0.00)  
 Exercice 2.6 : Ma bicyclette  <=> with try catch and function                                   (0.00)  
 Exercice 3.1 : Rechercher un nombre dans un tableau <=> with try catch and function             (0.00)  
-Exercice 3.2 : Rechercher une lettre dans un chaine de caractères
+Exercice 3.2 : Rechercher une lettre dans une String <=> with try catch and function            (0.00)
 
 Pourquoi les retour de valeur dans certaines fonction, selon le type, ne peut pas se faire dans le catch ?
 La difference entre Boolean et boolean?
