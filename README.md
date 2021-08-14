@@ -21,6 +21,7 @@ Exercices en Java
 
 Exercice : Hello World  
 Exercice 1.1.1 : Calcul de la moyenne de 2 nombres <=> with try catch and function              (0.00)  
+Exercice 1.1.3 : Calcul de la moyenne de 2 nombres <=> with try catch and function              (0.00)  
 Exercice 1.2 : Calcul de l’aire et du volume d’une sphère <=> with try catch and function       (0.00)  
 Exercice 1.3 : Calcul de la surface d’un secteur circulaire <=> with try catch and function     (0.00)  
 Exercice 1.4 : Inversion de 2 valeurs <=> with try catch and function                           (0.00)  
