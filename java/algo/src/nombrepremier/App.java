@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 public class App {
     static Scanner scanner = new Scanner(System.in);
-    static String userEnter = new String();
+    static String userEntry = new String();
     
     public static void main(String[] args) {
         int userNumber;
-        int diviseur = 2;
+        int divisor = 2;
 
         System.out.println("Déterminer s’il est un nombre premier !");
 
@@ -18,13 +18,13 @@ public class App {
         userNumber = Math.abs(userNumber); // For absolute value of a number
 
         // To determine if a is prime we look for the divisors of n, from 2 to square root of n
-        while (userNumber % diviseur != 0 && diviseur <= Math.sqrt(userNumber)) {
-            diviseur++;
+        while (userNumber % divisor != 0 && divisor <= Math.sqrt(userNumber)) {
+            divisor++;
         }
 
         // A prime number has 2 divisors 1 and itself
         // Display of the calculation
-        if (diviseur > Math.sqrt(userNumber)) {
+        if (divisor > Math.sqrt(userNumber)) {
             System.out.println("Vous avez choisi un nombre premier !");
         } else {
             System.out.println("Vous n'avez pas choisi un nombre premier !");
@@ -35,11 +35,11 @@ public class App {
     static int getUserEntry(String message) {
         do {
             System.out.println(message);
-            userEnter = scanner.nextLine();
+            userEntry = scanner.nextLine();
 
             // Test of the user input
             try {
-                return Integer.parseInt(userEnter);
+                return Integer.parseInt(userEntry);
             } catch (Exception e) {
                 //TODO: handle exception
                 System.out.println("Vous n'avez pas entré un nombre entier ! Recommencez !");

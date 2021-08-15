@@ -29,13 +29,14 @@ Exercice 1.5 : Calcul d’intérêts <=> with try catch and function            
 Exercice 1.6 : Nombre Premier <=> with try catch and function                                   (0.00)  
 Exercice 1.7 : Tri de nombres <=> with try catch and function                                   (0.00)    
 Exercice 1.8 : Année Bissextile <=> with try catch and function                                 (0.00)  
+Exercice 1.9 : Recherche des diviseurs d’un nombre  
 Exercice 2.1 : Kilomètres <-> Miles v1 <=> with try catch and function                          (0.00)  
 Exercice 2.1 : Kilomètres <-> Miles v2                                                          (0.00)  
-Exercice 2.1 : Kilomètres <-> Miles v3 illimited <=> with try cath (miss in unity) and function (0.00) 
+Exercice 2.1 : Kilomètres <-> Miles v3 illimited <=> with try cath (miss in unity) and function (0.00)  
 Exercice 2.2 : Fahrenheit (°F) <-> Celsius (°C) <=> with try catch and function                 (0.00)  
 Exercice 2.6 : Ma bicyclette  <=> with try catch and function                                   (0.00)  
 Exercice 3.1 : Rechercher un nombre dans un tableau <=> with try catch and function             (0.00)  
-Exercice 3.2 : Rechercher une lettre dans une String <=> with try catch and function            (0.00)
+Exercice 3.2 : Rechercher une lettre dans une String <=> with try catch and function            (0.00)  
 
 Pourquoi les retour de valeur dans certaines fonction, selon le type, ne peut pas se faire dans le catch ?
 La difference entre Boolean et boolean?

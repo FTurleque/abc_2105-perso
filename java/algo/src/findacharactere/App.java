@@ -1,4 +1,4 @@
-package rechercheunelettredansunechainedecharactere;
+package findacharactere;
 
 import java.util.Scanner;
 // import java.util.regex.Matcher;

@@ -1,4 +1,4 @@
-package rechercheunnombredansuntableau;
+package findanumber;
 
 import java.util.Scanner;
 

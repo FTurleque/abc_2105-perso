@@ -8,32 +8,32 @@ public class App {
     public static void main(String[] args) {
         String   userEntry,
                  unity;
-        String[] boardValious;
+        String[] valiousTable;
         int valious;
 
         System.out.println("Conversion Kilomètre en Miles et inversement !");
         unity = new String();
 
         do {
-            System.out.println("Choisir une valeur et sont unité de mesure suivi d'un espace :");
+            System.out.println("Choisir une valeur et sont unité de mesure suivi d'un espace ou quittez (quit):");
             System.out.println("km pour kilomètre et mi pour miles.");
             userEntry = scanner.nextLine();
         
             // I split userEnter in a board with two valious in the format string
-            boardValious = userEntry.split(" ");
+            valiousTable = userEntry.split(" ");
             
             // Check what is in the table 
-            System.out.println(boardValious[0]);
-            System.out.println(boardValious[1]);
+            // System.out.println(valiousTable[0]);
+            // System.out.println(valiousTable[1]);
             
-            if (!boardValious[0].equalsIgnoreCase("quit")) {
+            if (!valiousTable[0].equalsIgnoreCase("quit")) {
                 // I convert the first box of the table in a integer 
-                valious = Integer.parseInt(boardValious[0]);
+                valious = Integer.parseInt(valiousTable[0]);
             
-                if (boardValious.length < 2) {
+                if (valiousTable.length < 2) {
                     unity = "km";
                 } else {
-                    unity = boardValious[1];
+                    unity = valiousTable[1];
                 }
 
                 if (unity.equalsIgnoreCase("km")) {
@@ -47,6 +47,6 @@ public class App {
                 }
             }
             
-        } while (!boardValious[0].equalsIgnoreCase("quit"));
+        } while (!userEntry.equalsIgnoreCase("quit"));
     }
 }

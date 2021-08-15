@@ -7,7 +7,7 @@ public class App {
     static String   userEntry;
     static int      index;
     static Boolean  test;
-    static String[] boardNumber;
+    static String[] numberTable;
     static Double   somme = 0.0, 
                     mean;
 
@@ -15,7 +15,7 @@ public class App {
         System.out.println("Programme de calcul de la moyenne de 2 nombres.");
 
         do {
-            askNumber("Veuillez saisir 2 nombres séparés par un espace :");
+            askNumber("Veuillez saisir des nombres séparés par un espace :");
             calculationOfTheMean();
             continuOrNot("Souhaitez-vous faire un autre calcul ? (O/N)");
         } while (userEntry.equalsIgnoreCase("o"));
@@ -29,12 +29,12 @@ public class App {
             System.out.println(question);
             userEntry = scanner.nextLine();
 
-            boardNumber = userEntry.split(" ");
+            numberTable = userEntry.split(" ");
 
             // Test of the user input
             try {
-                for (int i = 0; i < boardNumber.length; i++) {
-                    Double.parseDouble(boardNumber[i]);
+                for (int i = 0; i < numberTable.length; i++) {
+                    Double.parseDouble(numberTable[i]);
                     // System.out.println(boardNumber[index]);
                 }
                 test = true;
@@ -46,8 +46,8 @@ public class App {
     }
 
     static void calculationOfTheMean() {
-        for (index = 0; index < boardNumber.length; index++) {
-            somme += Double.parseDouble(boardNumber[index]);
+        for (index = 0; index < numberTable.length; index++) {
+            somme += Double.parseDouble(numberTable[index]);
         }
         mean = somme / (double)index;
         System.out.println("La moyenne est de : " + mean);
