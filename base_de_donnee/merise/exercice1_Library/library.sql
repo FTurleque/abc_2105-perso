@@ -7,7 +7,8 @@ USE db_library;
 CREATE TABLE IF NOT EXISTS customers
 (
 	customer_id INT(11) PRIMARY KEY,
-    customer_name VARCHAR(64) NOT NULL,
+    customer_firstname VARCHAR(64) NOT NULL,
+    customer_lastname VARCHAR(64) NOT NULL,
     customer_address VARCHAR(255) NOT NULL,
     customer_deposit INT(11) NOT NULL,
     customer_loans_date DATE NOT NULL,
