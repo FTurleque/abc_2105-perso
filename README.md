@@ -59,3 +59,14 @@ POO en Java :
 --> Interface Graphic
 --> Retroconception   
 --> Retroconception 2   
+
+Base de donnée :
+Merise  Dictionnaire Données :  Exercices plages                            Ok   
+                                Exercices Grand prix                        Ok   
+
+        Modele Conceptuel :     Exercices Bibliothèque                      Ok   
+                                Exercice Éditeur                            Ok   
+                                Exercice Les courses de chevaux   
+                                Exercice Club Vidéo   
+                                Exercice Aéroport   
+                                Exercice Inventaire des œuvres d'art   

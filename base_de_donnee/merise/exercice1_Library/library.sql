@@ -23,5 +23,7 @@ CREATE TABLE IF NOT EXISTS books
     book_publisher VARCHAR(32) NULL,
     book_author VARCHAR(32) NULL,
     book_purchasedate DATE NOT NULL,
-    book_condition VARCHAR(16)
+    book_condition VARCHAR(16),
+    customer_id INT(11) NOT NULL,
+    FOREIGN KEY (customer_id) REFERENCES customers(customer_id)
 );
