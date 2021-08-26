@@ -66,7 +66,7 @@ Merise  Dictionnaire Données :  Exercices plages                            Ok
 
         Modele Conceptuel :     Exercices Bibliothèque                      Ok   
                                 Exercice Éditeur                            Ok   
-                                Exercice Les courses de chevaux   
-                                Exercice Club Vidéo   
-                                Exercice Aéroport   
+                                Exercice Les courses de chevaux             Ok   
+                                Exercice Club Vidéo                         Ok   
+                                Exercice Aéroport                           OK   
                                 Exercice Inventaire des œuvres d'art   
