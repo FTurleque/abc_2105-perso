@@ -24,7 +24,7 @@ public class App {
         // I break down the formulas
         aire = Math.PI * Math.pow(ray, 2);
         volume = Math.PI * Math.pow(ray, 3);
-
+        
         // calculation of the mean
         System.out.println("L'aire de la sphère est de : " + 4 * aire);
         System.out.println("Le volume de la sphère est de : " + ((4 / 3) * volume));
