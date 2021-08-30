@@ -2,6 +2,7 @@ DROP DATABASE IF EXISTS db_publisher;
 
 CREATE DATABASE IF NOT EXISTS db_publisher;
 
+
 USE db_publisher;
 
 CREATE TABLE IF NOT EXISTS authors
