@@ -1,4 +1,4 @@
-DROP DATABASE IF EXISTS db_library;
+--DROP DATABASE IF EXISTS db_library;
 
 CREATE DATABASE IF NOT EXISTS db_library;
 

@@ -1,5 +1,5 @@
 {
     "java.project.sourcePaths": [
-        "java/algo/src","poo/java/src"
+        "java/algo/src","poo/java/src","database/merise/src"
     ]
 }
