@@ -1,0 +1,7 @@
+Merise 02c - Exercices Modele Conceptuel :      (dictionaire de données, MCD, dépendances fonctionnelles, règle de gestion, sql)   
+- Exercice 1. Bibliothèque                      ( , , , , )  
+- Exercice 2. Éditeur                           ( , , , , )  
+- Exercice 3. Les courses de chevaux            ( , , , , )  
+- Exercice 4. Club Vidéo                        ( , , , , )  
+- Exercice 5. Aéroport                          (OK, OK, OK, OK, )  
+- xercice 6. Inventaire des œuvres d'art        ( , , , , )  

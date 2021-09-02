@@ -1,6 +1,18 @@
 Règles de gestion :  
-- Un client peut louer de 0 à 6 cassettes.  
-- Une cassette peut être louer par 1 et un 1 client.  
+- Un client peut effectuer de 0 à plusieurs locations.  
+- Une location est effectué dans 1 et 1 seul client.  
 ________
-- Un film à 1 et 1 seul genre.  
+- Une location est réalisé dans 1 et 1 seul magasin.
+- Un magasin peut avoir de 0 à plusieurs locations réalisées.
+________
+- Une location contient de 0 à 6 cassettes.
+- une cassette peut être contenu dans 1 et 1 seule location
+________
+- Une cassette est stocké dans 1 et 1 seul magasin.
+- Un magasin peut stocker de 0 a plusieurs fois une cassette.
+________
+- une cassette renferme 1 et 1 seul film.
+- Un film est renfermé dans 1 à plusieurs cassettes.
+________
+- Un film a 1 et 1 seul genre.  
 - Un genre peut avoir de 1 à plusieurs films.  
