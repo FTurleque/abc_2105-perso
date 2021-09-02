@@ -1,0 +1,19 @@
+﻿Mnémonique;Signification;Type;Longueur;Contrainte
+customer_id;Identifiant du client dans le programme.;N;11;Identifiant
+customer_firstname;Prénom du client.;A;64;Obligatoire
+customer_lastname;Nom de famille du client.;A;64;Obligatoire
+customer_address;Adresse du client.;AN;255;Obligatoire
+customer_borrow_number;Nombre d’emprunt par client.;N;4;Facultatif, <= 6
+customer_deposit;Caution déposée par le client.;N;11;Obligatoire
+borrow_id;Identifiant d’un emprunt dans le programme.;N;11;Identifiant
+borrow_late;Emprunt en retard.;B;;Facultatif, > 3 jours
+borrow_date;Date d’emprunt.;D;;Obligatoire, YYYY/MM/DD
+tape_id;Identifiant de la cassette.;N;11;Identifiant
+movie_title;Titre du film.;AN;64;Obligatoire
+movie_actorfistname;Prénom de l’acteur du film.;A;64;Obligatoire
+movie_actorlastname;Nom de l’acteur du film.;A;64;Obligatoire
+movie_time;Durée du film.;T;;Obligatoire
+movie_directorlastname;Nom du réalisateur du film.;A;64;Obligatoire
+movie_directorfirtname;Prénom du réalisateur du film.;A;64;Obligatoire
+typeofmovie_name;Genre d’un film.;A;30;Identifiant
+typeofmovie_public;Limite d’âge.;AN;30;Facultatif

@@ -1,0 +1,11 @@
+﻿Mnémonique;Signification;Type;Longueur;Contrainte
+race_name;Nom de la course.;A;48;Identifiant
+race_date;Date de la course.;D;;Obligatoire, YYYY-MM-DD
+horse_name;Nom du cheval.;A;20;Identifiant
+horse_number;Numéro du cheval.;N;11;Obligatoire
+bet_id;Identifiant du pari dans le programme.;N;11;Identifiant
+bet_type;Type de pari du joueur.;A;20;Obligatoire
+sum_of_bet;Somme du pari effectuer par le joueur.;N;11;Obligatoire
+order_number_bet;Ordre des chevaux jouer.;AN;48;Obligatoire
+bet_winnings;Gain des paris.;N;11;Obligatoire
+race_result;Résultat de la course, ordre d’arrivée.;AN;48;Obligatoire

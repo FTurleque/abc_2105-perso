@@ -1,4 +1,4 @@
-package exercice3_horse_Racing;
+package exercice3_horse_racing;
 
 public class App {
     

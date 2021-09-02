@@ -1,0 +1,15 @@
+﻿Mnémonique;Signification;Type;Longueur;Contrainte
+book_isbn;Identifiant du livre.;N;11;Identifiant
+book_title;Titre du livre.;A;24;Obligatoire
+book_price;Prix du livre.;N;4;Obligatoire
+book_edition_number;Numéro d’édition.;A;24;Obligatoire
+book_edition_date;Date de l’édition du livre.;D;;Obligatoire, YYYY-MM-DD
+book_edition_copy_number;Nombre d’exemplaires par éditions.;N;11;Obligatoire
+book_ awarded;Livre primé.;A;24;Facultatif
+author_id;Identifiant de l’auteur dans le système.;N;11;Identifiant
+author_firstname;Prénom de l’auteur.;A;48;Obligatoire
+author_lastname;Nom de l’auteur.;A;48;Obligatoire
+author_nickname;Pseudonyme de l’auteur.;AN;48;Facultatif
+bookseller_id;Identifiant du libraire dans le système.;N;11;Identifiant
+bookseller_name;Nom du libraire.;A;48;Obligatoire
+bookseller_address;Adresse du libraire.;AN;255;Obligatoire

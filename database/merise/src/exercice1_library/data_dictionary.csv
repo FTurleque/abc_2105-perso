@@ -1,0 +1,15 @@
+﻿Mnémonique;Signification;Type;Longueur;Contrainte
+customer_id;Identifiant du client dans le système.;N;11;Identifiant
+customer_lastname;Nom du client.;A;64;Obligatoire
+customer_firstname;Prénom du client;A;64;Obligatoire
+customer_address;Adresse du client.;AN;255;Obligatoire
+customer_deposit;Caution versée par client.;N;11;Obligatoire
+customer_loan_date;Date d’emprunt.;D;;Obligatoire, YYYY/MM/DD.
+customer_ loan _nb;Nombre d’emprunt par client.;N;4;Facultatif, <=10.
+customer_ loan _late;Emprunteur en retard (oui ou non).;B;;Facultatif, customer_borrow_date > 8 jours.
+book_id;Identifiant du livre dans le système.;N;11;Identifiant
+book_title;Titre du livre.;AN;64;Obligatoire
+book_ publisher;Editeur du livre.;AN;32;Obligatoire
+book_ authors;Nom de l’(les)auteur(s) du livre.;A;32;Obligatoire
+book_ purchasedate;Date d’achat du livre.;D;;Obligatoire, YYYY/MM/DD.
+book_condition;Etat du livre;A;16;Obligatoire

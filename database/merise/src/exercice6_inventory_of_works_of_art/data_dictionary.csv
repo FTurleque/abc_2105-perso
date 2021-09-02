@@ -1,0 +1,22 @@
+﻿Mnémonique;Signification;Type;Longueur;Contrainte
+work_id;Identifiant de l’œuvre d’art dans le programme.;N;11;Identifiant
+work_type;Quel est le type de l’œuvre d’art. (peinture, collage …);A;24;Obligatoire
+work_title;Nom de l’œuvre d’art.;A;48;Obligatoire
+work_year;Année de création de l’œuvre.;D;;Obligatoire, YYYY
+work_width;Largeur de l’œuvre.;N;11;Obligatoire
+work_height;Hauteur de l’œuvre.;N;11;Obligatoire
+work_lenght;Longueur de l’œuvre.;N;11;Obligatoire
+work_copy_owned;Numéro de l’exemplaire possédé.;N;11;Facultatif, Unique
+museum_id;Identifiant du musé dans le programme.;N;11;Identifiant
+museum_name;Nom du musé.;A;48;Obligatoire
+museum_city;Ville dans laquelle se trouve le musé.;A;48;Obligatoire
+artist_id;Identifiant de l’artiste dans le programme.;N;11;Identifiant
+artist_firstname;Prénom de l’artiste.;A;48;Obligatoire
+artist_lastname;Nom de l’artiste.;A;48;Obligatoire
+artist_nationality;Nationalité de l’artiste.;A;48;Obligatoire
+artist_birthdate;Date de naissance de l’artiste.;D;;Obligatoire, YYYY-MM-DD
+artist_deathdate;Date de décès de l’artiste.;D;;Facultatif, YYYY-MM-DD
+artistic_current_name;Nom du courant artistique.;A;24;Identifiant
+artistic_current_start;Année de début du courant artistique.;D;;Obligatoire, YYYY
+artistic_current_end;Année de fin du courant artistique.;D;;Facultatif, YYYY
+artistic_current_description;Description du courant artistique.;AN;255;Obligatoire
