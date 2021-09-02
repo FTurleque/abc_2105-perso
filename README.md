@@ -64,9 +64,10 @@ Base de donnée :
 Merise  Dictionnaire Données :  Exercices plages                            Ok   
                                 Exercices Grand prix                        Ok   
 
-        Modele Conceptuel :     Exercices Bibliothèque                      Ok   
-                                Exercice Éditeur                            Ok   
-                                Exercice Les courses de chevaux             Ok   
-                                Exercice Club Vidéo                         Ok   
-                                Exercice Aéroport                           OK   
-                                Exercice Inventaire des œuvres d'art   
+        Modele Conceptuel :                                                 (dictionaire de données, MCD, dépendances fonctionnelles, règle de gestion, sql)  
+                                Exercices Bibliothèque                      ( , , , , )   
+                                Exercice Éditeur                            ( , , , , )   
+                                Exercice Les courses de chevaux             ( , , , , )   
+                                Exercice Club Vidéo                         (OK, OK, OK, OK, )   
+                                Exercice Aéroport                           ( , , , , )   
+                                Exercice Inventaire des œuvres d'art        ( , , , , )  
