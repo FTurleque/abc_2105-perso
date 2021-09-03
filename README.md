@@ -67,7 +67,7 @@ Merise  Dictionnaire Données :  Exercices plages                            Ok
         Modele Conceptuel :                                                 (dictionaire de données, MCD, dépendances fonctionnelles, règle de gestion, sql)  
                                 Exercices Bibliothèque                      (OK, OK, OK, OK, )   
                                 Exercice Éditeur                            (OK, OK, OK, OK, )   
-                                Exercice Les courses de chevaux             (, , , , )   
+                                Exercice Les courses de chevaux             (OK, OK, OK, OK, )   
                                 Exercice Club Vidéo                         (OK, OK, OK, OK, )   
                                 Exercice Aéroport                           (, , , , )   
                                 Exercice Inventaire des œuvres d'art        (, , , , )  

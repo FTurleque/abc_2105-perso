@@ -22,27 +22,21 @@ CREATE TABLE IF NOT EXISTS bets
     bet_type VARCHAR(20) NOT NULL,
     sum_of_bet INT NOT NULL,
     order_number_bet VARCHAR(48) NOT NULL,
-    bet_winnings INT NOT NULL
+    horse_name VARCHAR(20) NOT NULL,
+    FOREIGN KEY (horse_name) REFERENCES horses(horse_name)
 );
 
-CREATE TABLE IF NOT EXISTS participate
+CREATE TABLE IF NOT EXISTS result
 (
     race_result VARCHAR(48) NOT NULL,
+    bet_winnings INT NOT NULL,
     horse_name VARCHAR(20) NOT NULL,
     race_name VARCHAR(48) NOT NULL,
     FOREIGN KEY (horse_name) REFERENCES horses(horse_name),
     FOREIGN KEY (race_name) REFERENCES races(race_name)
 );
 
-CREATE TABLE IF NOT EXISTS choose
-(
-    horse_name VARCHAR(20) NOT NULL,
-    bet_id INT NOT NULL,
-    FOREIGN KEY (horse_name) REFERENCES horses(horse_name),
-    FOREIGN KEY (bet_id) REFERENCES bets(bet_id)
-);
-
-CREATE TABLE IF NOT EXISTS play
+CREATE TABLE IF NOT EXISTS transmit
 (
     race_name VARCHAR(48) NOT NULL,
     bet_id INT NOT NULL,
