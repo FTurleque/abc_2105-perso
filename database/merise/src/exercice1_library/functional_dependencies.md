@@ -1,5 +1,6 @@
 Dépendances fonctionnelles :  
 
-- customer_id  customer_name, customer_address, customer_deposit, customer_borrow_date, customer_ borrow_nb, customer_ borrow_late.  
+- customer_id => customer_lastname, customer_firstname, customer_street_nb, customer_street, customer_postal_code, customer_city, customer_deposit.  
 
-- book_id  book_title, book_ publisher, book_ authors, book_ purchasedate, book_condition, customer_id.  
+- book_id => book_title, book_ publisher, book_ author, book_ purchasedate, book_condition.  
+- borrow_id => borrow_date, borrow_nb, borrow_late, book_id, book_title, book_ publisher, book_ author, book_ purchasedate, book_condition, customer_id, customer_lastname, customer_firstname, customer_street_nb, customer_street, customer_postal_code, customer_city, customer_deposit.

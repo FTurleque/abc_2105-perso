@@ -16,8 +16,12 @@ CREATE TABLE IF NOT EXISTS authors
 CREATE TABLE IF NOT EXISTS booksellers
 (
 	bookseller_id INT PRIMARY KEY,
-	bookseller_name VARCHAR(48) NOT NULL,
-	bookseller_address VARCHAR(255) NOT NULL
+	bookseller_firstname VARCHAR(48) NOT NULL,
+	bookseller_lastname VARCHAR(48) NOT NULL,
+	bookseller_nb_street INT NOT NULL,
+	bookseller_street VARCHAR(255) NOT NULL,
+	bookseller_postal_code INT NOT NULL,
+	bookseller_city VARCHAR(64) NOT NULL
 );
 
 CREATE TABLE IF NOT EXISTS books
@@ -25,12 +29,14 @@ CREATE TABLE IF NOT EXISTS books
 	book_isbn INT PRIMARY KEY,
 	book_title VARCHAR(24) NOT NULL,
 	book_price INT(4) NOT NULL,
-	book_edition_number VARCHAR(24) NOT NULL,
-	book_edition_date DATE NOT NULL,
-	book_edition_copy_number INT NOT NULL,
-	book_awarded VARCHAR(24) NULL,
-	author_id INT NOT NULL,
-	FOREIGN KEY (author_id) REFERENCES authors(author_id)
+	book_awarded VARCHAR(24) NULL
+);
+
+CREATE TABLE IF NOT EXISTS editions
+(
+	edition_number VARCHAR(32) PRIMARY KEY,
+	edition_date DATE NOT NULL,
+	edition_copy_number INT NOT NULL
 );
 
 CREATE TABLE IF NOT EXISTS redact
@@ -47,4 +53,12 @@ CREATE TABLE IF NOT EXISTS ordering
 	bookseller_id INT NOT NULL,
 	FOREIGN KEY (book_isbn) REFERENCES books(book_isbn),
 	FOREIGN KEY (bookseller_id) REFERENCES booksellers(bookseller_id)
+);
+
+CREATE TABLE IF NOT EXISTS integrate
+(
+	book_isbn INT NOT NULL,
+	edition_number VARCHAR(32) NOT NULL,
+	FOREIGN KEY (book_isbn) REFERENCES books(book_isbn),
+	FOREIGN KEY (edition_number) REFERENCES editions(edition_number)
 );

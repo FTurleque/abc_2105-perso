@@ -1,4 +1,6 @@
 Règles de gestion :  
-
-- Le client pourra emprunter de 0 à 10 livres en même temps.  
-- Un livre pourra être emprunter par 1 et 1 seul client.  
+- Un emprunt est réalisé par 1 et 1 seul client.  
+- Le client réalise de 0 à plusieurs emprunts.  
+_______________
+- Un emprunt à de 0 à plusieurs livres attribués.
+- Un livre est attribué a 1 et 1 seule commande.

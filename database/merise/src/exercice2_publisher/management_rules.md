@@ -1,10 +1,9 @@
 Règles de gestion :  
-
-- Un livre est tirée en 1 ou plusieurs éditions.  
-- Une édition est constituée de 1 à plusieurs livres.  
-_____________________________
-- Un libraire peut passer de 0 à plusieurs commandes.  
-- Une commande est passé par 1 et 1 seul libraire.  
-_____________________________
+- Un livre peut être commandé 1 à plusieurs Libraires.  
 - Un libraire peut commander de 0 à plusieurs livres.  
-- Un livre peut être commandé 1 à plusieurs fois.  
+____________________________
+- Un livre est écrit par 1 à plusieurs auteurs.  
+- Un auteur écrit 1 à plusieurs livres.  
+_____________________________
+- Un livre est intégré de 1 à plusieurs éditions.  
+- Une édition intègre 1 à plusieurs livres.  
