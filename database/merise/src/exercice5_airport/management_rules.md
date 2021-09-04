@@ -1,9 +1,13 @@
 Règles de gestion :  
-- Un propriétaire peut posséder de 0 à plusieurs avions.  
-- Un avion peut appartenir à 1 et 1 seul propriétaire.  
+
+- Une licence est à 1 et 1 seul pilote.
+- Un pilote a de 1 à plusieurs licences.
 ______
-- Un pilote peut voler sur 1 à plusieurs types d’avions.  
-- Un avion peut avoir de 0 à plusieurs pilotes.  
+- Un avion est conduit grâce à 1 et 1 seule licence.
+- Une licence permet de conduire 1 à plusieurs avions.
+______
+- Un avion peut appartenir à 1 et 1 seul propriétaire.  
+- Un propriétaire peut posséder de 1 à plusieurs avions.  
 ______
 - Une intervention est effectuée sur 1 et 1 seul avion.  
 - Un avion peut subir de 0 à plusieurs interventions.  

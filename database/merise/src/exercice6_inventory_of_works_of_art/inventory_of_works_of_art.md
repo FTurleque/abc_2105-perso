@@ -1,29 +1,28 @@
 Exercice 6. Inventaire des œuvres d'art
 
-
 Les musées d'art veulent constituer une base de données commune des œuvres d'art qu'ils possèdent.
 
-Actuellement le conservateur de chaque musée garde, pour chaque œuvre, les informations suivantes :
--	Type (peinture, collage, sculpture, lithographie, etc…).
--	Titre.
--	Année.
--	Nom de(s) artiste(s).
--	Matière(s).
--	Dimensions.
+Actuellement le conservateur de chaque musée garde, pour chaque **œuvre**, les informations suivantes :
+-	**Type** (peinture, collage, sculpture, lithographie, etc…).
+-	**Titre**.
+-	**Année**.
+-	Nom de(s) **artiste**(s).
+-	**Matière**(s).
+-	**Dimensions**.
 
--	Courant artistique (impressionnisme, cubisme, etc.) auquel elle appartient s'il est défini (certaines œuvres sont inclassables).
+-	**Courant artistique** (impressionnisme, cubisme, etc.) auquel elle appartient s'il est défini (certaines œuvres sont inclassables).
 
--	Et éventuellement le numéro de l'exemplaire possédé par le musée (certains types d'œuvres comme les lithographies et les sculptures en bronze sont tirées en plusieurs exemplaires, le musée ne possède alors pas l'œuvre, mais tel exemplaire de l'œuvre).
+-	Et éventuellement le **numéro de l'exemplaire possédé** par le musée (certains types d'œuvres comme les lithographies et les sculptures en bronze sont tirées en plusieurs exemplaires, le musée ne possède alors pas l'œuvre, mais tel exemplaire de l'œuvre).
 
 En plus, certains conservateurs se sont constitué des fiches techniques décrivant :
 
 -	Les principaux courants artistiques :
 
-    ▪	Nom du courant, période (année de début, année de fin)
--	Texte descriptif
+    ▪	**Nom** du courant, **période** (année de début, année de fin)
+-	Texte **descriptif**
 -	Les artistes :
 
-    ▪	Nom, prénom, nationalité, date de naissance, éventuellement date de décès.
+    ▪	**Nom**, **prénom**, **nationalité**, **date de naissance**, éventuellement date de **décès**.
     
     ▪	Les courants auxquels ils ont participé par ses œuvres
 

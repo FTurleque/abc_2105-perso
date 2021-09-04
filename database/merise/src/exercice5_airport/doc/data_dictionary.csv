@@ -1,31 +1,42 @@
 ﻿Mnémonique;Signification;Type;Longueur;Contrainte
-plane_ registration_number;Immatriculation de l’avion.;N;11;Identifiant
-plane_purchase_date;Date d’achat de l’avion.;D;;Obligatoire
-plane _name;Nom de l’avion.;A;32;Obligatoire
-plane _constructor_name;Nom du constructeur de l’avion.;A;32;Obligatoire
-plane_ engine_power;Puissance du moteur de l’avion.;AN;32;Obligatoire
+plane_registration_number;Immatriculation de l’avion.;N;11;Identifiant
+plane_purchase_date;Date d’achat de l’avion.;D;;Obligatoire, YYYY-MM-DD
+plane_name;Nom de l’avion.;A;32;Obligatoire
+plane_constructor_name;Nom du constructeur de l’avion.;A;32;Obligatoire
+plane_engine_power;Puissance du moteur de l’avion.;AN;32;Obligatoire
 plane_place_number;Nombre de place dans l’avion;N;11;Obligatoire
 owner_id;Identifiant du propriétaire.;N;11;Identifiant
-owner_type;Type de propriétaire.;A;16;Obligatoire
-owner_lastname;Nom du propriétaire.;A;48;Obligatoire
-owner_firdtname;Prénom du propriétaire.;A;48;Facultatif
-owner_address;Adresse du propriétaire.;AN;255;Obligatoire
+owner_type;Type de propriétaire (Société, Particulier);A;20;Obligatoire
+owner_society_name;Nom de la société.;A;48;Facultatif
+owner_lastname;Nom du propriétaire.;A;48;Facultatif
+owner_firstname;Prénom du propriétaire.;A;48;Facultatif
+owner_nb_street;Numéro de rue du propriétaire.;N;11;Obligatoire
+owner_street;Nom de rue du propriétaire.;AN;255;Obligatoire
+owner_postal_code;Code postal du propriétaire.;N;11;Obligatoire
+owner_city;Ville du propriétaire;A;64;Obligatoire
 owner_phone_number;Numéro de tel du propriétaire.;N;11;Obligatoire
 mechanic_id;Identification du mécanicien dans le programme.;N;11;Identifiant
-mechanic_role;Rôle que jouera le mécanicien dans l’intervention.;A;16;Obligatoire
+mechanic_role;Rôle que le mécanicien va jouer dans la réparation.;A;16;Obligatoire
 mechanic_firstname;Prénom du mécanicien.;A;48;Obligatoire
 mechanic_lastname;Nom du mécanicien.;A;48;Obligatoire
-mechanic_address;Adresse du mécanicien.;AN;255;Obligatoire
+mechanic_nb_street;Numéro de rue du mécanicien.;N;11;Obligatoire
+mechanic_street;Nom de rue du mécanicien.;AN;255;Obligatoire
+mechanic_postal_code;Code postal du mécanicien.;N;11;Obligatoire
+mechanic_city;Ville du mécanicien.;A;64;Obligatoire
 mechanic_phone_number;Numéro de tel du mécanicien.;N;11;Obligatoire
 mechanic_hability;Type d’avion que le mécanicien est habilité à réparer.;A;32;Obligatoire
 Intervention_id;Identification de l’intervention dans le programme.;N;11;Identifiant
 intervention_object;Objet de l’intervention.;A;255;Obligatoire
-intervention_date;Date de l’intervention.;D;;Obligatoire
+intervention_date;Date de l’intervention.;DT;;Obligatoire, YYYY-MM-DD, HH-MM
 intervention_time;Durée de l’intervention.;T;;Obligatoire
 pilot_id;Identifiant du pilote dans le programme.;N;11;Identifiant
 pilot_firstname;Prénom du pilote.;A;48;Obligatoire
 pilot_lastname;Nom du pilote.;A;48;Obligatoire
+pilot_nb_street;Numéro de rue du pilote.;N;11;Obligatoire
+pilot_street;Nom de rue du pilote.;AN;255;Obligatoire
+pilot_postal_code;Code postal du pilote.;N;11;Obligatoire
+pilot_city;Ville du pilote.;A;64;Obligatoire
 pilot_phone_number;Numéro de tel du pilote.;N;11;Obligatoire
-pilot_licence_number;Numéro de licence du pilote.;AN;32;Obligatoire
-pilot_ number_of_flights;Nombre de vol sur un appareil précis par pilote.;N;11;Obligatoire
-pilot_hability;Type d’avion que le pilote est habilité a piloté.;A;32;Obligatoire
+licence_number;Numéro de licence du pilote.;AN;32;Identifiant
+licence_plane_hability;Type d’avion que le pilote est habilité à piloté.;A;32;Obligatoire
+number_of_flights;Nombre de vol sur un appareil.;N;11;Facultatif

@@ -4,7 +4,7 @@ store_name;Nom du magasin.;AN;32;Obligatoire
 store_nb_street;Numéro de la rue du magasin.;N;11;Obligatoire
 store_street;Nom de la rue du magasin.;AN;255;Obligatoire
 store_postal_code;Code Postal du magasin.;N;11;Obligatoire
-store_street_additional;Supplement d'adresse du magasin.;AN;255;Facultatif
+store_street_additional;Supplément d'adresse du magasin.;AN;255;Facultatif
 store_city;Nom de la ville du magasin.;A;64;Obligatoire
 customer_id;Identifiant du client dans le programme.;N;11;Identifiant
 customer_firstname;Prénom du client.;A;64;Obligatoire
@@ -12,6 +12,7 @@ customer_lastname;Nom de famille du client.;A;64;Obligatoire
 customer_nb_street;Numéro de la rue du client.;N;11;Obligatoire
 customer_street;Nom de la rue du client.;AN;255;Obligatoire
 customer_postal_code;Code Postal du client.;N;11;Obligatoire
+customer_street_additional;Supplément d'adresse du client.;AN;255;Facultatif
 customer_city;Nom de la ville du client.;A;64;Obligatoire
 customer_borrow_number;Nombre d’emprunt par client.;N;4;Facultatif, <= 6
 customer_deposit;Caution déposée par le client.;N;11;Obligatoire
@@ -19,7 +20,7 @@ borrow_id;Identifiant d’un emprunt dans le programme.;N;11;Identifiant
 borrow_late;Emprunt en retard.;B;;Facultatif, > 3 jours
 borrow_date;Date d’emprunt.;D;;Obligatoire, YYYY/MM/DD
 tape_id;Identifiant de la cassette.;N;11;Identifiant
-tape_condition;Etat de la cassette vidéo.;A;16;Oblibatoire
+tape_condition;Etat de la cassette vidéo.;A;16;Obligatoire
 tape_condition_def;Déscription de l'état de la vidéo.;A;255;Facultatif
 tape_commissioning;Date de mise en service de la cassette;D;;Obligatoire
 tape_location_nb;Nombre de fois que la cassette a été louée.;N;11;Facultatif
