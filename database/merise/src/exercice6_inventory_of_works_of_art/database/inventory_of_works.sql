@@ -4,6 +4,14 @@ CREATE DATABASE IF NOT EXISTS db_works;
 
 USE db_works;
 
+CREATE TABLE IF NOT EXISTS artistic_currents
+(
+    artistic_current_name VARCHAR(24) PRIMARY KEY,
+    artistic_current_start DATE NOT NULL,
+    artistic_current_end DATE NULL,
+    artistic_current_description VARCHAR(255) NOT NULL
+);
+
 CREATE TABLE IF NOT EXISTS works
 (
     work_id INT PRIMARY KEY,
@@ -13,7 +21,10 @@ CREATE TABLE IF NOT EXISTS works
     work_width INT NOT NULL,
     work_height INT NOT NULL,
     work_lenght INT NOT NULL,
-    work_copy_owned INT(11) NULL UNIQUE
+    work_material VARCHAR(32) NOT NULL,
+    work_copy_owned INT(11) NULL UNIQUE,
+    artistic_current_name VARCHAR(24) NOT NULL,
+    FOREIGN KEY (artistic_current_name) REFERENCES artistic_currents(artistic_current_name)
 );
 
 CREATE TABLE IF NOT EXISTS museums
@@ -32,15 +43,7 @@ CREATE TABLE IF NOT EXISTS artists
     artist_lastname VARCHAR(48) NOT NULL,
     artist_nationality VARCHAR(48) NOT NULL,
     artist_birthdate DATE NOT NULL,
-    artist_deathdate DATE NULL
-);
-
-CREATE TABLE IF NOT EXISTS artistic_currents
-(
-    artistic_current_name VARCHAR(24) PRIMARY KEY,
-    artistic_current_start DATE NOT NULL,
-    artistic_current_end DATE NULL,
-    artistic_current_description VARCHAR(255) NOT NULL,
+    artist_deathdate DATE NULL,
     work_id INT NOT NULL,
     FOREIGN KEY (work_id) REFERENCES works(work_id)
 );

@@ -31,7 +31,7 @@ Ils veulent aussi mettre ces fiches en commun dans la base de données.
 
 Cette base de données devra permettre de répondre à des questions du type :
 
--	Où est telle œuvre de tel(s) artiste(s) (nom, ville du musée) ?
+-	Où est telle œuvre de tel(s) artiste(s) (**nom**, **ville du musée**) ?
 -	Dans le cas d'une œuvre à exemplaires :
 
     ▪	Liste des musées conservant un exemplaire de l'œuvre.

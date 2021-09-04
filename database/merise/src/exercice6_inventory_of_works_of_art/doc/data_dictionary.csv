@@ -6,6 +6,7 @@ work_year;Année de création de l’œuvre.;D;;Obligatoire, YYYY
 work_width;Largeur de l’œuvre.;N;11;Obligatoire
 work_height;Hauteur de l’œuvre.;N;11;Obligatoire
 work_lenght;Longueur de l’œuvre.;N;11;Obligatoire
+work_material;Matière qui compose l'œuvre.;A;32;Obligatoire
 work_copy_owned;Numéro de l’exemplaire possédé.;N;11;Facultatif, Unique
 museum_id;Identifiant du musé dans le programme.;N;11;Identifiant
 museum_name;Nom du musé.;A;48;Obligatoire
