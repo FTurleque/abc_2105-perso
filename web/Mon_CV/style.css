@@ -1,22 +1,33 @@
-@font-face {
+/* @font-face {
     font-family: 'black_jackregular';
     src: url('fonts/blackjack-webfont.eot');
     src: url('fonts/blackjack-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/blackjack-webfont.woff2') format('woff2'), url('fonts/blackjack-webfont.woff') format('woff'), url('fonts/blackjack-webfont.ttf') format('truetype'), url('fonts/blackjack-webfont.svg#black_jackregular') format('svg');
     font-weight: normal;
     font-style: normal;
-}
+}*/
 
-@font-face {
+/* @font-face {
     font-family: 'brushstroke_plainplain';
     src: url('fonts/BRUSHSTP-webfont.eot');
     src: url('fonts/BRUSHSTP-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/BRUSHSTP-webfont.woff2') format('woff2'), url('fonts/BRUSHSTP-webfont.woff') format('woff'), url('fonts/BRUSHSTP-webfont.ttf') format('truetype'), url('fonts/BRUSHSTP-webfont.svg#brushstroke_plainplain') format('svg');
     font-weight: normal;
     font-style: normal;
-}
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+/* font-family: 'Aclonica', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+/* font-family: 'Pattaya', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Rum+Raisin&display=swap');
+/* font-family: 'Rum Raisin', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+/* font-family: 'RocknRoll One', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Rationale&display=swap');
+/* font-family: 'Rationale', sans-serif; */
 
 body {
-    background: url("img/image_de_fond.jpg") fixed no-repeat;
-    font-family: 'black_jackregular';
+    /* background: url("img/image_de_fond.jpg") fixed no-repeat; */
+    /* font-family: 'black_jackregular'; */
     font-size: 20px;
 }
 
@@ -27,7 +38,7 @@ header {
     justify-content: space-around;
 }
 
-nav ul {
+nav ol {
     display: flex;
     font-family: 'brushstroke_plainplain', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 25px;
@@ -48,12 +59,12 @@ h1 {
 
 h2 {
     text-align: center;
-    font-family: 'brushstroke_plainplain', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Aclonica', sans-serif;
     text-decoration: underline;
 }
 
 h3 {
-    font-family: 'brushstroke_plainplain', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'RocknRoll One', sans-serif;
     color: rgb(119, 41, 41);
     font-size: 25px;
     text-align: center;
@@ -77,9 +88,30 @@ a:hover {
     padding-top: 15px;
 }
 
+p {
+    text-align: center;
+}
+
+ul li, p {
+    font-family: 'Rum Raisin', sans-serif;
+}
+
+#column_header {
+    font-size: 1.5em;
+}
+
+th {
+    font-family: 'Pattaya', sans-serif;
+}
+
 th,
 td {
     border: 1px solid black;
+    padding: 0px 15px;
+}
+
+td {
+    font-family: 'Rationale', sans-serif;
 }
 
 table {
