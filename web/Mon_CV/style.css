@@ -28,9 +28,10 @@
 
 
 body {
-    /* background: url("img/image_de_fond.jpg") fixed no-repeat; */
+    background: url("img/background/pexels-pixabay-210764.jpg") no-repeat top center;
+    background-size: 100%;
     /* font-family: 'black_jackregular'; */
-    font-size: 20px;
+    /* font-size: 20px; */
 }
 
 header {
