@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,42 +8,42 @@
     <title>TP Vignoble</title>
   </head>
 
-  <main>
-    <header>
-      <figure><img src="img/logo.png" alt="logo" /></figure>
-      <nav>
-        <ul>
-          <li><a href="#">Accueil</a></li>
-          <li class="scroll-down">
-            <a href="#">HTML 5</a>
-            <ul class="scroll-choice">
-              <li><a href="#">Structure</a></li>
-              <li><a href="#">Multimédia</a></li>
-              <li><a href="#">Polaroïd</a></li>
-            </ul>
-          </li>
-          <li class="scroll-down">
-            <a href="#">CSS3</a>
-            <ul class="scroll-choice">
-              <li><a href="#">Introduction</a></li>
-              <li><a href="#">Background</a></li>
-              <li><a href="#">Bordure</a></li>
-              <li><a href="#">Texte</a></li>
-              <li><a href="#">Transformation</a></li>
-            </ul>
-          </li>
-          <li class="scroll-down">
-            <a href="#">Application</a>
-            <ul class="scroll-choice">
-              <li><a href="#">Canvas</a></li>
-              <li><a href="#">SVG</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+  <header>
+    <figure class="logo"><img src="img/logo.png" alt="nav-logo" /></figure>
+    <nav>
+      <ul id="nav-bar">
+        <li><a href="#">Accueil</a></li>
+        <li>
+          <a href="#">HTML 5</a>
+          <ul>
+            <li><a href="#">Structure</a></li>
+            <li><a href="#">Multimédia</a></li>
+            <li><a href="#">Polaroïd</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">CSS3</a>
+          <ul>
+            <li><a href="#">Introduction</a></li>
+            <li><a href="#">Background</a></li>
+            <li><a href="#">Bordure</a></li>
+            <li><a href="#">Texte</a></li>
+            <li><a href="#">Transformation</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Application</a>
+          <ul>
+            <li><a href="#">Canvas</a></li>
+            <li><a href="#">SVG</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <main>
     <section>
       <figure>
         <img src="img/lightbox/affichage/image1.jpg" alt="picture-header" />
@@ -126,19 +126,23 @@
     </section>
     <section>
       <ol>
-        <li><a href="#">Gigondas</a></li>
-        <li><a href="#">Vacqueyras</a></li>
-        <li><a href="#">Rasteau</a></li>
-        <li><a href="#">Bourgogne</a></li>
-        <li><a href="#">Bordeaux</a></li>
-        <li><a href="#">Sauterre</a></li>
-        <li><a href="#">Viognier</a></li>
+        <li><img src="img/liste.png" alt="list" /><a href="#">Gigondas</a></li>
+        <li>
+          <img src="img/liste.png" alt="list" /><a href="#">Vacqueyras</a>
+        </li>
+        <li><img src="img/liste.png" alt="list" /><a href="#">Rasteau</a></li>
+        <li><img src="img/liste.png" alt="list" /><a href="#">Bourgogne</a></li>
+        <li><img src="img/liste.png" alt="list" /><a href="#">Bordeaux</a></li>
+        <li><img src="img/liste.png" alt="list" /><a href="#">Sauterre</a></li>
+        <li><img src="img/liste.png" alt="list" /><a href="#">Viognier</a></li>
       </ol>
       <article>
         <h2>Les Produits</h2>
         <figure>
           <img src="img/home-img1.jpg" alt="icon" />
-          <figcaption>Portez ce vieux vin au juge blond qui fume sur son île</figcaption>
+          <figcaption>
+            Portez ce vieux vin au juge blond qui fume sur son île
+          </figcaption>
         </figure>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
@@ -161,14 +165,15 @@
         </p>
         <button>Lire la suite</button>
       </article>
-
     </section>
     <footer>
-      <li><img src="img/liste.png" alt="list"><a href="#">Accueil</a></li>
-      <li><img src="img/liste.png" alt="list"><a href="#">HTML 5</a></li>
-      <li><img src="img/liste.png" alt="list"><a href="#">CSS3</a></li>
-      <li><img src="img/liste.png" alt="list"><a href="#">Application</a></li>
-      <li><img src="img/liste.png" alt="list"><a href="#">Contact</a></li>
+      <ul>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">HTML 5</a></li>
+        <li><a href="#">CSS3</a></li>
+        <li><a href="#">Application</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
     </footer>
   </main>
 </html>
