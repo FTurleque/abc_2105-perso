@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
 /* font-family: 'Satisfy', cursive; */
 
 @font-face {
@@ -16,11 +16,25 @@
   font-style: normal;
 }
 
-
 body {
   background-image: url(img/bg_motif.gif);
   background-attachment: fixed;
   margin: 0;
+  width: auto;
+}
+
+/* Page Content*/
+main {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1.5fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: ". page-content page-content .";
+}
+
+.page-content {
+  grid-area: page-content;
+  height: max-content;
+  background-color: #ada29d54;
 }
 
 /* Navigation*/
@@ -31,7 +45,7 @@ body {
   top: 0;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 46px;
-  grid-template-areas: ". . . logo logo nav-bar nav-bar nav-bar nav-bar nav-bar nav-bar nav-bar";
+  grid-template-areas: ". . logo logo . nav-bar nav-bar nav-bar nav-bar nav-bar nav-bar nav-bar";
   background-color: rgba(0, 0, 0, 0.829);
   border-bottom: solid 1px #fff;
 }
@@ -40,7 +54,8 @@ body {
   padding-top: 4px;
   grid-area: logo;
   z-index: 1;
-  margin-left: -10px;
+  margin-left: -85px;
+  text-align: center;
 }
 
 .nav-bar {
@@ -49,7 +64,7 @@ body {
 
 .menu {
   margin: 0;
-  padding: 7px;
+  padding: 10px;
   list-style-type: none;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -115,22 +130,6 @@ body {
   /* color: black; */
 }
 
-/* Page Content*/
-main {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto auto;
-  grid-template-areas: 
-    ". page-content page-content ."
-    ". . footer-picture .";
-  }
-
-.page-content {
-  grid-area: page-content;
-  height: max-content;
-  background-color: #ada29d54;
-}
-
 /* First part*/
 .picture-container {
   margin: 0 10px;
@@ -138,7 +137,7 @@ main {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto auto auto;
-  grid-template-areas: 
+  grid-template-areas:
     "picture"
     "picture"
     "picture"
@@ -153,7 +152,7 @@ main {
 
 h2 {
   grid-area: title-picture;
-  font-family: 'Satisfy', cursive;
+  font-family: "Satisfy", cursive;
   background-color: white;
   text-align: center;
   margin: 0 15px 10px;
@@ -184,8 +183,7 @@ h2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
-  grid-template-areas: 
-    "article1 article2 article3";
+  grid-template-areas: "article1 article2 article3";
 }
 
 .article1 {
@@ -241,7 +239,7 @@ h1 {
   grid-area: button;
 }
 
-p{
+p {
   font-family: "OldSharpie";
   font-size: 14px;
 }
@@ -250,7 +248,7 @@ button {
   padding: 5px;
   border-radius: 5px;
   width: max-content;
-  font-family: 'Satisfy', cursive;
+  font-family: "Satisfy", cursive;
   font-size: 18px;
   place-self: center;
   background-color: rgba(255, 255, 255, 0.459);
@@ -273,10 +271,8 @@ button:hover {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
-  grid-template-areas: 
-    "selection article article";
+  grid-template-areas: "selection article article";
   margin: 15px 0;
-  
 }
 
 .selection {
@@ -284,10 +280,10 @@ button:hover {
   background-color: rgba(128, 128, 128, 0.384);
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows:  50px auto;
-  grid-template-areas: 
-  "title-selection"
-  "ol-selection";
+  grid-template-rows: 50px auto;
+  grid-template-areas:
+    "title-selection"
+    "ol-selection";
   margin: 10px;
   padding-top: 10px;
 }
@@ -305,7 +301,7 @@ button:hover {
   padding: 0;
   margin: 0;
   place-self: center;
-  font-family: 'Satisfy', cursive;
+  font-family: "Satisfy", cursive;
   font-size: 25px;
   width: 100%;
 }
@@ -375,17 +371,19 @@ footer {
 }
 
 footer nav {
-    background: url(img/footer-bg.jpg);
-    margin-top: 1px;
+  background: url(img/footer-bg.jpg);
+  margin-top: 1px;
 }
 
 .footer-nav {
-  padding: 0 200px 0 0;
+  padding: 0;
+  margin: 0;
   list-style-type: none;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+  align-items: center;
 }
 
 .footer-link a {
@@ -399,21 +397,53 @@ footer nav {
   color: red;
 }
 
-.footer-picture {
-  grid-row: footer-picture;
-  padding-right: 50px;
-}
-
 .footer-picture img {
-  position: absolute;
+  /* position: absolute; */
 }
 
-@media screen and (max-width: 1445px) {
-  h1 {
-    /* font-family: "channel";
-    font-size: 12px;
-    color: #fff;
-    place-self: center;
-    padding-top: 7px; */
+@supports (display: flex) {
+  @media screen and (max-width: 1662px) {
+    main {
+      display: grid;
+      grid-template-columns: 1fr 4fr 1fr;
+      grid-template-rows: auto;
+      grid-template-areas: ". page-content .";
+    }
   }
+  
+  @media screen and (max-width: 1400px) {
+    main {
+      display: grid;
+      grid-template-columns: 1fr 5fr 1fr;
+      grid-template-rows: auto;
+      grid-template-areas: ". page-content .";
+    }
+  }
+  
+  @media screen and (max-width: 1210px) {
+    main {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      grid-template-areas: "page-content";
+    }
+  }
+}
+
+
+
+/* iPad*/
+@media screen and (max-width:1024px) {
+  .top-bar {
+    display: grid;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: 46px;
+    grid-template-areas: "logo logo nav-bar nav-bar nav-bar nav-bar nav-bar nav-bar nav-bar";
+    background-color: rgba(0, 0, 0, 0.829);
+    border-bottom: solid 1px #fff;
+  }
+  
 }
