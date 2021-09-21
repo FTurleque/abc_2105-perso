@@ -10,15 +10,8 @@
 }
 
 @font-face {
-  font-family: "wildcard";
-  src: url("fonts/AB_Exp_by_III_wildcard_III.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Caitlin";
-  src: url("fonts/Caitlin.ttf") format("truetype");
+  font-family: "OldSharpie";
+  src: url("fonts/OldSharpie-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -63,7 +56,7 @@ body {
   grid-auto-rows: 42px;
   grid-template-areas: "accueil html5 css3 application contact";
   font-family: "channel";
-  font-size: 14px;
+  font-size: 13px;
   text-align: center;
 }
 
@@ -223,7 +216,7 @@ h2 {
 
 h1 {
   font-family: "channel";
-  font-size: 18px;
+  font-size: 17px;
   color: #fff;
   place-self: center;
   padding-top: 7px;
@@ -248,6 +241,11 @@ h1 {
   grid-area: button;
 }
 
+p{
+  font-family: "OldSharpie";
+  font-size: 14px;
+}
+
 button {
   padding: 5px;
   border-radius: 5px;
@@ -255,6 +253,14 @@ button {
   font-family: 'Satisfy', cursive;
   font-size: 18px;
   place-self: center;
+  background-color: rgba(255, 255, 255, 0.459);
+}
+
+button:hover {
+  color: red;
+  transform: rotate(20deg);
+  zoom: 1.5;
+  cursor: pointer;
 }
 
 .icon-article {
@@ -312,6 +318,7 @@ button {
 .ol-selection img {
   padding-right: 10px;
   vertical-align: middle;
+  cursor: pointer;
 }
 
 .article-selection {
@@ -365,19 +372,14 @@ button {
 footer {
   display: flex;
   flex-direction: column;
-  /* display: grid;
-  grid-template-columns: 3fr 1fr;
-  grid-template-rows: auto;
-  grid-template-areas: 
-  "footer-nav footer-picture"; */
 }
 
 footer nav {
     background: url(img/footer-bg.jpg);
+    margin-top: 1px;
 }
 
 .footer-nav {
-  /* grid-row: footer-nav; */
   padding: 0 200px 0 0;
   list-style-type: none;
   display: flex;
@@ -399,14 +401,19 @@ footer nav {
 
 .footer-picture {
   grid-row: footer-picture;
-  text-align: center;
-  margin-bottom: 20px;
-  /* display: flex;
-  flex-direction: row-reverse; */
-  
+  padding-right: 50px;
 }
 
 .footer-picture img {
   position: absolute;
 }
 
+@media screen and (max-width: 1445px) {
+  h1 {
+    /* font-family: "channel";
+    font-size: 12px;
+    color: #fff;
+    place-self: center;
+    padding-top: 7px; */
+  }
+}
