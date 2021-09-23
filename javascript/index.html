@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <title>Maths Test</title>
+  </head>
+  <body>
+    <div
+      class="container"
+      style="
+        background-color: rgb(167, 182, 223);
+        margin-top: 50px;
+        border-radius: 25px;
+      "
+    >
+      <div class="p-3 text-center text-white font-weight-bold">
+        <!-- affiche le score du joueur -->
+        <h2>TUTO <span style="color: brown">DE</span> RIEN</h2>
+        <div id="score">
+          <p class="m-0">Score : 20/20</p>
+          <p class="m-0">Expression : x</p>
+          <p class="m-0">Level : 1</p>
+        </div>
+      </div>
+
+      <div id="levelSetup">
+        <!-- affiche le niveau de difficulté -->
+        <!-- <div class="d-flex justify-content-between p-5">
+        <div class="border border-dark p-2">
+        <p class="text-center bg-dark text-white p-3 mb-2 font-weight-bold">Difficulty</p>
+        <button class="btn btn-primary" value='+' onclick="setExpression(this)">+</button>
+        <button class="btn btn-primary" value='-' onclick="setExpression(this)">-</button>
+        <button class="btn btn-primary" value='x' onclick="setExpression(this)">x</button>
+        <button class="btn btn-primary" value='/' onclick="setExpression(this)">/</button>
+        </div>
+         
+        <div class="border border-dark p-2">
+        <p class="text-center bg-dark text-white p-3 mb-2 font-weight-bold">Level</p>
+        <button class="btn btn-primary" value="1" onclick="setLevel(this)">1</button>
+        <button class="btn btn-primary" value="2" onclick="setLevel(this)">2</button>
+        <button class="btn btn-primary" value="3" onclick="setLevel(this)">3</button>
+        <button class="btn btn-primary" value="4" onclick="setLevel(this)">4</button>
+        <button class="btn btn-primary" value="5" onclick="setLevel(this)">5</button>
+        </div>
+        </div> -->
+      </div>
+
+      <div id="Calcule">
+        <!-- affiche le calcule à faire -->
+        <div class="input-group input-group-lg p-5">
+          <div class="input-group-prepend">
+            <span class="input-group-text" style="font-size: 40px"
+              >5 x 8 =</span
+            >
+          </div>
+          <input
+            type="number"
+            id="playerInput"
+            class="form-control"
+            style="font-size: 40px"
+          />
+          <div class="input-group-append">
+            <button
+              class="btn btn-success"
+              style="font-size: 40px"
+              onclick="setUserInput()"
+            >
+              validate
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div id="result">
+        <!-- affiche le résulat si bon ou mauvais -->
+        <div class="p-5">
+          <div
+            class="p-3 text-center bg-success text-white"
+            style="font-size: 40px"
+          >
+            5 x 8 = 40 good Job !
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="code.js"></script>
+  </body>
+</html>
