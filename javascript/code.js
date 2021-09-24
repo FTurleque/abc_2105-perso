@@ -147,7 +147,7 @@ function checkUserResult() {
     counter++;
 
     showScoreInformation();
-    if(counter < 2) {
+    if(counter < 20) {
         setTimeout(calculateTest,3000);
     } else {
         document.getElementById('score').innerHTML="";
