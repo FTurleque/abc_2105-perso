@@ -1,7 +1,9 @@
 // 1.Inversion de valeurs :
-let valious1 = 10;
-let valious2 = 5;
-let valious3 = 0;
+alert("Inversion de deux nombre");
+
+let valious1 = prompt("Veuillez entrer une première valeur :");
+let valious2 = prompt("Veuillez entrer une seconde valeur :");
+let valious3;
 
 alert("La valeur de valious1 est : " + valious1);
 alert("La valeur de valious2 est : " + valious2);

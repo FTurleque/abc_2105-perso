@@ -5,7 +5,7 @@
 
 let article1 = prompt("Quel est le prix hors taxe de l'article ?");
 let articleNb = prompt("Combien d'articles souhaitez vous acheter ?");
-let priceTTC = article1 += ((article1 * 20) /100);
+let priceTTC = (parseFloat(article1) + ((parseFloat(article1) * 20) /100)) * articleNb;
 
-console.log(`Le prix de l'article TTC est de : ${priceTTC} € !`);
-console.log("Le prix de l'article TTC est de : " + priceTTC + " € !";
+alert(`Le prix de l'article TTC est de : ${priceTTC} € !`);
+alert("Le prix de l'article TTC est de : " + priceTTC + " € !");
