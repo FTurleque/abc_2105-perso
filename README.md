@@ -90,3 +90,15 @@ Exercices en Programmation Orientée Object (POO)
             --> Flex ou Grid (+ version mobile)         (Ok)  
 
         Javascript :   
+            --> Exercice 1.1            (Ok)  
+            --> Exercice 1.2 & 1.3      (Ok)  
+            --> Exercice 1.4 & 1.5      (Ok)  
+            --> Exercice 2.1            (Ok)  
+            --> Exercice 2.2            (Ok)  
+            --> Exercice 2.3            (Ok)  
+            --> Exercice 2.4 & 2.5      (Ok)  
+            --> Exercice 2.6            (Ok)  
+            --> Exercice 3.1            (Ok)  
+            --> Exercice 3.2  
+            --> Exercice 3.3  
+            
