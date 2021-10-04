@@ -5,5 +5,5 @@
 
 setInterval(function() {
     let d = new Date();
-    console.log("L'heure courante est : " + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds());
+    document.write("L'heure courante est : " + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds() + "</br>");
 }, 1000)
