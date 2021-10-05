@@ -98,7 +98,9 @@ Exercices en Programmation Orientée Object (POO)
             --> Exercice 2.3            (Ok)  
             --> Exercice 2.4 & 2.5      (Ok)  
             --> Exercice 2.6            (Ok)  
-            --> Exercice 3.1            (Ok)  
-            --> Exercice 3.2  
-            --> Exercice 3.3  
+            --> Exercice 3.1 & 3.3      (Ok)  
+            --> Exercice 3.2            (Ok)  
+            --> Exercice 3.4            (Ok)  
+
+            --> Clock                   (Ok)  
             

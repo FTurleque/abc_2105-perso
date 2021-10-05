@@ -10,6 +10,8 @@ radius = radius * 0.9;
 setInterval(drawClock,1000);
 
 function drawClock() {
+  /** La fonction clearRect sert à effacer les éguilles pour les redéssiner en temps réel */
+  ctx.clearRect(-radius, -radius, canvas.width, canvas.height);
   drawFace(ctx, radius);
   drawNumber(ctx, radius);
   drawTime(ctx, radius);
@@ -86,6 +88,7 @@ function drawTime(ctx, radius){
 }
 
 function drawHand(ctx, pos, length, width) {
+  // ctx.clearRect();
   ctx.beginPath();
   ctx.lineWidth = width;
   ctx.lineCap = "round";
