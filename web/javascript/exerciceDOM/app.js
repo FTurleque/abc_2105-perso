@@ -46,20 +46,31 @@ formElement.appendChild(divElement3);
 divElement3.appendChild(inputElement3);
 document.body.appendChild(ulElement);
 
-/** programme */
-let product;
-let tab = new Array();
+/** Programme */
+let userEntry,
+    product,
+    number;
 
 inputElement3.addEventListener("click", (event) => {
     event.preventDefault();
-    product = inputElement.value;
-    tab.push(product);
-    console.table(tab);
-    let liElement = document.createElement("li");
-    ulElement.appendChild(liElement);
-    liElement.textContent = product;
+
+    product = askUserEntry(inputElement)
+    number = askUserEntry(inputElement2);
+    creationHTML();
+    
     inputElement.value = inputElement.defaultValue;
+    inputElement2.value = inputElement2.defaultValue;
 });
 
-console.table(tab);
+function askUserEntry (_elementHTML) {
+    return userEntry = _elementHTML.value;
+}
+
+function creationHTML() {
+    let liElement = document.createElement("li");
+    ulElement.appendChild(liElement);
+    liElement.textContent = number + " " + product;
+}
+
+// console.table(tabProduct);
 
