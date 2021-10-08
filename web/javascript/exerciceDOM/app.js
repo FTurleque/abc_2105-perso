@@ -50,14 +50,17 @@ document.body.appendChild(ulElement);
 let userEntry,
     product,
     number;
+let userTab = new Array;
 
 inputElement3.addEventListener("click", (event) => {
     event.preventDefault();
 
     product = askUserEntry(inputElement)
     number = askUserEntry(inputElement2);
-    creationHTML();
-    
+    console.log(userTab.indexOf(product, 0))
+    creationHTML(product, number);
+    userTab.push([number, product]);
+    console.table(userTab);
     inputElement.value = inputElement.defaultValue;
     inputElement2.value = inputElement2.defaultValue;
 });
@@ -66,11 +69,28 @@ function askUserEntry (_elementHTML) {
     return userEntry = _elementHTML.value;
 }
 
-function creationHTML() {
+function creationHTML(_product, _number) {
     let liElement = document.createElement("li");
     ulElement.appendChild(liElement);
-    liElement.textContent = number + " " + product;
+    liElement.textContent = _number + " " + _product;
 }
 
-// console.table(tabProduct);
+// function matrix(rows, cols, defaultValue) {
+//     let arr = [];
 
+//     /** Create all line */
+//     for (let i = 0; i < rows; i++) {
+//         /** Create an empty line */
+//         arr.push([]);
+
+//         /** Add cols to the empty line */
+//         arr[i].push(new Array(cols));
+
+//         for (let j = 0; j < cols; j++) {
+//             /** Initializes */
+//             arr[i][j] = defaultValue;
+//         }
+
+//     }
+//     return arr;
+// }
