@@ -50,17 +50,22 @@ document.body.appendChild(ulElement);
 let userEntry,
     product,
     number;
-let userTab = new Array;
+let productTab = new Array,
+    numberTab = new Array;
 
 inputElement3.addEventListener("click", (event) => {
     event.preventDefault();
 
-    product = askUserEntry(inputElement)
+    product = askUserEntry(inputElement);
     number = askUserEntry(inputElement2);
-    console.log(userTab.indexOf(product, 0))
+    // console.log(userTab.indexOf(product, 0));
+    checkProduct(product, number);
     creationHTML(product, number);
-    userTab.push([number, product]);
-    console.table(userTab);
+    // userTab.push([number, product]);
+    productTab.push(product);
+    numberTab.push(number);
+    // console.table(product);
+    // console.table(number);
     inputElement.value = inputElement.defaultValue;
     inputElement2.value = inputElement2.defaultValue;
 });
@@ -74,6 +79,23 @@ function creationHTML(_product, _number) {
     ulElement.appendChild(liElement);
     liElement.textContent = _number + " " + _product;
 }
+
+function checkProduct(_product, _number) {
+    if (productTab.indexOf(product) === -1) {
+
+    } else {
+        let i = 0;
+        for (i; i < productTab.length; i++) {
+            if (_product === productTab[i]) {
+                number = parseInt(_number) + parseInt(numberTab[i]);
+            }
+        }
+        ul:nth-child(i) {
+            document.getElementsByTagName(liElement).innerHTML = number + product;
+        }
+    }
+}
+
 
 // function matrix(rows, cols, defaultValue) {
 //     let arr = [];
