@@ -58,14 +58,12 @@ inputElement3.addEventListener("click", (event) => {
 
     product = askUserEntry(inputElement);
     number = askUserEntry(inputElement2);
-    // console.log(userTab.indexOf(product, 0));
     checkProduct(product, number);
     creationHTML(product, number);
-    // userTab.push([number, product]);
     productTab.push(product);
     numberTab.push(number);
-    // console.table(product);
-    // console.table(number);
+    console.log(productTab);
+    console.log(numberTab);
     inputElement.value = inputElement.defaultValue;
     inputElement2.value = inputElement2.defaultValue;
 });
@@ -82,17 +80,22 @@ function creationHTML(_product, _number) {
 
 function checkProduct(_product, _number) {
     if (productTab.indexOf(product) === -1) {
+        // creationHTML(_product, _number);
 
     } else {
-        let i = 0;
-        for (i; i < productTab.length; i++) {
+        for (let i = 0; i < productTab.length; i++) {
             if (_product === productTab[i]) {
                 number = parseInt(_number) + parseInt(numberTab[i]);
+                let child = document.getElementsByTagName("li")[i];
+                child.parentNode.removeChild(child);
+                productTab = productTab.slice(i, 1);
+                numberTab.slice(i);
+
             }
         }
-        ul:nth-child(i) {
-            document.getElementsByTagName(liElement).innerHTML = number + product;
-        }
+        // ul:nth-child(i) {
+        //     document.getElementsByTagName(liElement).innerHTML = number + product;
+        // }
     }
 }
 
