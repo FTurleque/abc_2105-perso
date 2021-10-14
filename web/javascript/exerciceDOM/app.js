@@ -88,14 +88,10 @@ function checkProduct(_product, _number) {
                 number = parseInt(_number) + parseInt(numberTab[i]);
                 let child = document.getElementsByTagName("li")[i];
                 child.parentNode.removeChild(child);
-                productTab = productTab.slice(i, 1);
-                numberTab.slice(i);
+                productTab.splice(i, 1);
 
             }
         }
-        // ul:nth-child(i) {
-        //     document.getElementsByTagName(liElement).innerHTML = number + product;
-        // }
     }
 }
 
